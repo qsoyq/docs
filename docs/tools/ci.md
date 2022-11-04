@@ -8,6 +8,27 @@
 docker run -it --rm -v ~/.docker/config.json:/kaniko/.docker/config.json -v $codedir:/workspace  gcr.io/kaniko-project/executor:v1.9.0-debug  -d $PUSH_IMAGE
 ```
 
+[kaniko github action](https://github.com/aevea/action-kaniko)
+
+```yaml
+name: Docker build
+on: push
+jobs:
+  docker:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@master
+      - name: Kaniko build
+        uses: aevea/action-kaniko@master
+        with:
+          image: ${{ secrets.IMAGE }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          cache: true
+          cache_registry: aevea/cache
+          tag: latest
+```
+
 ## Gitlab CI Runner
 
 安装 Runner
