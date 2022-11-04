@@ -139,9 +139,7 @@ docker run -d --name github-runner \
 -v /etc/passwd:/etc/passwd:ro \
 -v /github/actions-runner:/github/actions-runner \
 -v /var/run/docker.sock:/var/run/docker.sock \
--v ~/.docker/config.json:$HOME/.docker/config.json \
 -v /usr/bin/docker:/usr/local/bin/docker \
--v /usr/local/bin/docker-compose:/usr/local/bin/docker-compose \
 debian:11 sleep infinity
 ```
 
