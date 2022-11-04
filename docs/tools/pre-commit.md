@@ -13,6 +13,8 @@ pre-commit run --all-file # Run hooks.
 pre-commit sample-config  # Produce a sample .pre-commit-config.yaml file
 ```
 
+[pre-commit插件](https://github.com/qsoyq/precommit)实现
+
 ## Python pre-commit 配置模板
 
 ```yaml
