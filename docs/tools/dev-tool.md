@@ -22,3 +22,9 @@ alias toi386="arch -ax86_64 zsh --login"
 alias unset_proxy="unset http_proxy https_proxy all_proxy"
 alias cloudflared.restart="sudo launchctl stop com.cloudflare.cloudflared && sudo launchctl start com.cloudflare.cloudflared"
 ```
+
+limit
+
+```shell
+echo "* - nofile 102400" >> /etc/security/limits.conf
+```
