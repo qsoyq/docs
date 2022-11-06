@@ -98,6 +98,10 @@ ipv6 使用基于 ICMP 协议的 ND 协议来实现类似 IPV4 中的 ARP 协议
 
 ### UDP
 
+[![udp_header]][udp_header]
+
+[udp_header]: /assets/images/protocol/network/udp_header.png
+
 UDP 包分为头部和数据两部分.
 
 头部记录了源主机的端口和目的主机的端口, 加上 IP 包头部的源主机地址和目的主机地址, 就能定位网络中两台主机中的进程.

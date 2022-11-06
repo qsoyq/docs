@@ -8,3 +8,5 @@
 那就熟悉下`mkdocs-material`来作为文档管理工具, 顺便记录下一些无关紧要的文字.
 
 毕竟有的时候要找一些材料的话, 有个索引工具, 还是挺方便的.
+
+[github](https://github.com/qsoyq/docs)
