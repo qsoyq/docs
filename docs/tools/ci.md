@@ -125,6 +125,8 @@ notify:
 
 [github-actions](https://docs.github.com/cn/actions)
 
+[workflow-syntax-for-github-actions](https://docs.github.com/cn/actions/using-workflows/workflow-syntax-for-github-actions)
+
 [hosting-your-own-runners](https://docs.github.com/cn/actions/hosting-your-own-runners)
 
 部署容器作为 self-hosted 环境
