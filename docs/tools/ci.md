@@ -10,25 +10,6 @@ docker run -it --rm -v ~/.docker/config.json:/kaniko/.docker/config.json -v $cod
 
 [kaniko github action](https://github.com/aevea/action-kaniko)
 
-```yaml
-name: Docker build
-on: push
-jobs:
-  docker:
-    runs-on: self-hosted
-    steps:
-      - uses: actions/checkout@master
-      - name: Kaniko build
-        uses: aevea/action-kaniko@master
-        with:
-          image: ${{ secrets.IMAGE }}
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          cache: true
-          cache_registry: aevea/cache
-          tag: latest
-```
-
 ## Gitlab CI Runner
 
 安装 Runner
@@ -172,4 +153,53 @@ docker exec -it -u 1000 github-runner bash -c "./run.sh"
 docker exec -it -u 0 github-runner bash -c "apt install -y systemctl"
 docker exec -it -u 0 github-runner bash -c "./svc.sh install"
 docker exec -it -u 0 github-runner bash -c "./svc.sh start"
+```
+
+main分支推送时构建并推送镜像
+
+```yaml
+name: Docker build for main branch
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  docker:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@master
+      - name: Kaniko build
+        uses: aevea/action-kaniko@master
+        with:
+          image: ${{ secrets.IMAGE }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          cache: true
+          cache_registry: aevea/cache
+          tag: latest
+
+```
+
+release 发布时构建并推送镜像
+
+```yaml
+name: Docker build for release
+on:
+  release:
+    types: [published]
+
+jobs:
+  docker:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@master
+      - name: Kaniko build
+        uses: aevea/action-kaniko@master
+        with:
+          image: ${{ secrets.IMAGE }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          cache: true
+          cache_registry: aevea/cache
+          tag: ${{ github.ref_name }}
 ```
