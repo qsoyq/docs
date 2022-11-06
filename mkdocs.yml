@@ -6,6 +6,7 @@ site_description: >-
 
 repo_name: qsoyq/docs
 repo_url: https://github.com/qsoyq/docs
+edit_uri: edit/main/docs/
 
 theme:
   name: material
