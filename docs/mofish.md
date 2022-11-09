@@ -20,6 +20,7 @@
 - [Frost's Blog](https://frostming.com/)
 - [闪客](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MjE3NDE0Ng==&action=getalbum&album_id=1703494881072955395#wechat_redirect)
 - [go101](https://github.com/go101/go101)
+- [Quick Reference](https://wangchujiang.com/reference/index.html)
 
 ## 极致摸鱼
 
