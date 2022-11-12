@@ -1,11 +1,10 @@
-## httpx
+# httpx
 
 最近看到朋友在聊支持 h2 的 http 客户端, 因为之前用过这个库, 便打算看一下源代码实现.
 
 httpx 本身并没有实现 h1 和 h2 的协议, 而是在 `HTTPTransport` 里调用了 `httpcore` 来完成网络通信层.
 
 httpx 的`Request` 、`Response`的结构是借鉴`requests`的,  在`httpx/_status_codes` 源码内甚至有对`requests`的兼容性处理.
-
 
 ## WSGITransport 和 ASGITransport
 
@@ -19,10 +18,10 @@ httpx 设计了 BaseTransport 类来处理请求.
 
 这个特性让我想到了可以用来实现数据的 mock.
 
-
 ## 基于 httpx 的数据 mock
 
 #### 如何处理注册事件
+
 在以 FastApi作为框架写测试代码的时候, 遇到了一个问题, 就是本应在应用启动时的注册事件, 并没有执行.
 
 而路由处理函数是依赖这些注册事件的, 那么该如何启动 FastApi 的注册事件?
