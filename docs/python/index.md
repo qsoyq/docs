@@ -4,4 +4,4 @@
 
 [![strftime]][strftime]
 
-[strftime]: /assets/images/python/std/strftime.png
+[strftime]: /assets/images/python/std/strftime.jpeg
