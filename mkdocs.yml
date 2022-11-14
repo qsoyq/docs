@@ -69,6 +69,7 @@ nav:
       - threading: python/threading.md
       - fastapi: python/fastapi.md
       - httpx: python/httpx.md
+      - sqlalchemy: python/sqlalchemy.md
       - pep: python/pep.md
       - gRPC: python/grpc.md
       - typer: python/typer.md
