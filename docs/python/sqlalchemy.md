@@ -2,7 +2,7 @@
 
 [quickstart](https://docs.sqlalchemy.org/en/14/orm/quickstart.html)
 
-sqlalchemy 基础
+[migration to 2.0](https://docs.sqlalchemy.org/en/14/changelog/migration_20.html)
 
 ```python
 from sqlalchemy import create_engine
@@ -32,23 +32,14 @@ from sqlalchemy.orm import Session
 
 session = Session(engine, future=True)
 
-# query from a class
-statement = select(User).filter_by(name="ed")
+session.execute(
+  select(User)
+).scalars().all()
 
-# list of first element of each row (i.e. User objects)
-result = session.execute(statement).scalars().all()
-
-# query with multiple classes
-statement = select(User, Address).join("addresses").filter_by(name="ed")
-
-# list of tuples
-result = session.execute(statement).all()
-
-# query with ORM columns
-statement = select(User.name, User.fullname)
-
-# list of tuples
-result = session.execute(statement).all()
+session.execute(
+  select(User).
+  filter_by(name="some user")
+).scalar_one()
 ```
 
 update

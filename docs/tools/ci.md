@@ -112,7 +112,9 @@ notify:
 
 部署容器作为 self-hosted 环境
 
-github runner 不允许以 root 用户身份执行命令, 所以在启动容器时可以指定非 root 用户
+github runner 不允许以 root 用户身份执行命令, 所以在启动容器时可以指定非 root 用户, 或者指定环境变量 `RUNNER_ALLOW_RUNASROOT=1`
+
+### 基于 debian 构建镜像
 
 ```shell
 docker run -d --name github-runner \
@@ -154,6 +156,39 @@ docker exec -it -u 0 github-runner bash -c "apt install -y systemctl"
 docker exec -it -u 0 github-runner bash -c "./svc.sh install"
 docker exec -it -u 0 github-runner bash -c "./svc.sh start"
 ```
+
+### 基于自封装镜像
+
+```shell
+docker run -d --name github-runner-{name} \
+--restart unless-stopped \
+-w /github/actions-runner \
+-v github-runner-{name}:/github/actions-runner \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v /usr/bin/docker:/usr/local/bin/docker \
+--platform linux/x86_64 \
+qsoyq/github-action-image
+```
+
+根据交互提示, 输入对应的仓库地址和注册 token
+
+```shell
+docker exec -it github-runner-docker-webhook bash -c "./config.sh"
+```
+
+注册系统服务
+
+```shell
+docker exec -it -u 0 github-runner bash -c "./svc.sh install"
+```
+
+启动
+
+```shell
+docker exec -it -u 0 github-runner bash -c "./svc.sh start"
+```
+
+### github actions 本地配置
 
 main分支推送时构建并推送镜像
 
