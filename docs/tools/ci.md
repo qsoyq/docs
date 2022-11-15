@@ -160,10 +160,11 @@ docker exec -it -u 0 github-runner bash -c "./svc.sh start"
 ### 基于自封装镜像
 
 ```shell
-docker run -d --name github-runner-{name} \
+docker run -d --name github-runner-{repo-name} \
 --restart unless-stopped \
 -w /github/actions-runner \
--v github-runner-{name}:/github/actions-runner \
+-v github-runner-{repo-name}:/github/actions-runner \
+-v /github/actions-runner/_work/{repo-name}:/github/actions-runner/_work/{repo-name} \
 -v /var/run/docker.sock:/var/run/docker.sock \
 -v /usr/bin/docker:/usr/local/bin/docker \
 --platform linux/x86_64 \
