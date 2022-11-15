@@ -17,3 +17,4 @@ jobs:
           cache: true
           cache_registry: aevea/cache
           tag: latest
+          debug: true
