@@ -8,6 +8,14 @@ repo_name: qsoyq/docs
 repo_url: https://github.com/qsoyq/docs
 edit_uri: edit/main/docs/
 
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+
 theme:
   name: material
   include_search_page: true
@@ -30,7 +38,6 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-
 
   palette:
     # Palette toggle for light mode
@@ -67,6 +74,8 @@ nav:
   - Python:
       - python/index.md
       - threading: python/threading.md
+      - profile: python/profile.md
+      - diagrams: python/diagrams.md
       - fastapi: python/fastapi.md
       - httpx: python/httpx.md
       - sqlalchemy: python/sqlalchemy.md
@@ -80,6 +89,7 @@ nav:
   - Tools:
       - zimaboard: tools/zimaboard.md
       - ci: tools/ci.md
+      - mermaid: tools/mermaid.md
       - pre-commit: tools/pre-commit.md
       - traefik: tools/traefik.md
       - dev-tool: tools/dev-tool.md
