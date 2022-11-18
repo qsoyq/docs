@@ -64,11 +64,11 @@ grpc 提供了 metadata, 通过读写 metadata, 来达到 header 相关的需求
 
 [![grpc_call_blocking_before]][grpc_call_blocking_before]
 
-[grpc_call_blocking_before]: /assets/images/grpc_call_blocking_before.png
+[grpc_call_blocking_before]: https://telegraph.wangqs.cn/file/58567135e9b6781449341.png
 
 [![grpc_call_blocking_after]][grpc_call_blocking_after]
 
-[grpc_call_blocking_after]: /assets/images/grpc_call_blocking_after.png
+[grpc_call_blocking_after]: https://telegraph.wangqs.cn/file/54b1dfd94d6b77a7a98b0.png
 
 优点是非常灵活, 可以轻松修改组件逻辑.
 
@@ -286,7 +286,7 @@ error: Return type "AsyncIterator[SubResponse]" of "sub" incompatible with retur
 
 [![py_grpc_bp_ai]][py_grpc_bp_ai]
 
-[py_grpc_bp_ai]: /assets/images/py_grpc_bp_ai.png
+[py_grpc_bp_ai]: https://telegraph.wangqs.cn/file/5697490426a4b41032200.png
 
 实际上, 在 `async def` 中, 使用 `yield` 关键字能实现 `AsyncIterator` 需要的功能.
 

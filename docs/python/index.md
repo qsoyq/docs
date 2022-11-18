@@ -4,4 +4,4 @@
 
 [![strftime]][strftime]
 
-[strftime]: /assets/images/python/std/strftime.jpeg
+[strftime]: https://telegraph.wangqs.cn/file/ac0fc39362df4667fc2dd.jpg

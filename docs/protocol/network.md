@@ -100,7 +100,7 @@ ipv6 使用基于 ICMP 协议的 ND 协议来实现类似 IPV4 中的 ARP 协议
 
 [![udp_header]][udp_header]
 
-[udp_header]: /assets/images/protocol/network/udp_header.png
+[udp_header]: https://telegraph.wangqs.cn/file/48788ef0dd42f42001344.png
 
 UDP 包分为头部和数据两部分.
 
@@ -128,4 +128,4 @@ TCP 通过滑动窗口, 并发发送多个分片.
 
 [![tcp_header]][tcp_header]
 
-[tcp_header]: /assets/images/protocol/network/tcp_header.png
+[tcp_header]: https://telegraph.wangqs.cn/file/bcf3ee6cad3525f7126c3.png
