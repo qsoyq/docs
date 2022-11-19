@@ -16,7 +16,7 @@
 6. 客户端拿到 forwardauth 中间件返回的 Cookie 信息, 并重新跳转到原始地址.
 7. 在之后的客户端请求中, 都会携带含有用户标识的 Cookie 信息, forwardauth中间件在验证 Cookie 后放行请求.
 
-```` markdown title="未携带合法登录态的请求流程"
+```` markdown title="基于 forwardauth 进行身份验证的 traefik 代理转发流程"
 ``` mermaid
 sequenceDiagram
 autonumber
