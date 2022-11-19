@@ -16,6 +16,48 @@
 6. 客户端拿到 forwardauth 中间件返回的 Cookie 信息, 并重新跳转到原始地址.
 7. 在之后的客户端请求中, 都会携带含有用户标识的 Cookie 信息, forwardauth中间件在验证 Cookie 后放行请求.
 
+```` markdown title="未携带合法登录态的请求流程"
+``` mermaid
+sequenceDiagram
+autonumber
+client->>traefik proxy: 客户端请求
+traefik proxy->> forwardauth service: 身份验证
+alt if 身份验证失败
+    forwardauth service->>traefik proxy: 身份验证失败, 返回重定向响应, 重定向到身份认证地址
+    traefik proxy->>client: 返回重定向响应, 重定向到身份认证地址
+    client->>OAuth Service: 客户端重定向到身份认证地址
+    OAuth Service->>client: 身份认证成功, 重定向到客户端
+    client->>traefik proxy: 客户端请求
+
+    traefik proxy->> forwardauth service: 身份验证
+end
+forwardauth service->>traefik proxy: 身份验证成功
+traefik proxy->>endpoint: 转发请求到目标服务
+endpoint->>traefik proxy: 返回响应结果
+traefik proxy->>client: 返回响应结果
+```
+````
+
+``` mermaid
+sequenceDiagram
+autonumber
+client->>traefik proxy: 客户端请求
+traefik proxy->> forwardauth service: 身份验证
+alt if 身份验证失败
+    forwardauth service->>traefik proxy: 身份验证失败, 返回重定向响应, 重定向到身份认证地址
+    traefik proxy->>client: 返回重定向响应, 重定向到身份认证地址
+    client->>OAuth Service: 客户端重定向到身份认证地址
+    OAuth Service->>client: 身份认证成功, 重定向到客户端
+    client->>traefik proxy: 客户端请求
+
+    traefik proxy->> forwardauth service: 身份验证
+end
+forwardauth service->>traefik proxy: 身份验证成功
+traefik proxy->>endpoint: 转发请求到目标服务
+endpoint->>traefik proxy: 返回响应结果
+traefik proxy->>client: 返回响应结果
+```
+
 所以需要部署服务如下
 
 - Traefik 代理服务: [traefik](https://github.com/traefik/traefik)
