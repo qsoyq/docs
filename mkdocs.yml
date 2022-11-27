@@ -112,9 +112,10 @@ nav:
 
   - Note:
       - why: note/why.md
-      - about-http-client: note/http-client.md
-      - http-rpc-client: note/http-rpc-client.md
-      - color-log: note/color-log.md
+      - http 客户端实现思路: note/http-client.md
+      - fastapi header 处理: note/fastapi-headers.md
+      - http 客户端封装: note/http-rpc-client.md
+      - python 彩色化日志: note/color-log.md
       - mysql:
         - note/mysql/index.md
         - mysql_foreign_key_constraints: note/mysql/mysql_foreign_key_constraints.md
