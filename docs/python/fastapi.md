@@ -21,7 +21,7 @@ def add_mermaid_support(func: Callable[..., HTMLResponse]):
     https://mermaid-js.github.io/mermaid/#/n00b-gettingStarted?id=requirements-for-the-mermaid-api
     """
     mermaid_js = '''
-    
+
     <script type="module">
       import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
       mermaid.initialize({ startOnLoad: true });

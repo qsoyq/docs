@@ -174,19 +174,19 @@ qsoyq/github-action-image
 根据交互提示, 输入对应的仓库地址和注册 token
 
 ```shell
-docker exec -it github-runner-docker-webhook bash -c "./config.sh"
+docker exec -it github-runner-{repo-name} bash -c "./config.sh"
 ```
 
 注册系统服务
 
 ```shell
-docker exec -it -u 0 github-runner bash -c "./svc.sh install"
+docker exec -it -u 0 github-runner-{repo-name} bash -c "./svc.sh install"
 ```
 
 启动
 
 ```shell
-docker exec -it -u 0 github-runner bash -c "./svc.sh start"
+docker exec -it -u 0 github-runner-{repo-name} bash -c "./svc.sh start"
 ```
 
 ### github actions 本地配置
