@@ -48,17 +48,21 @@ import imp
 import fastapi
 import fastapi.applications
 import fastapi.openapi.docs
+
+# A
 fastapi.openapi.docs.get_swagger_ui_html = add_mermaid_support(fastapi.openapi.docs.get_swagger_ui_html)
 fastapi.openapi.docs.get_redoc_html = add_mermaid_support(fastapi.openapi.docs.get_redoc_html)
 imp.reload(fastapi.applications)
-app = FastAPI()
+
+# B
+# fastapi.applications.get_swagger_ui_html = add_mermaid_support(fastapi.openapi.docs.get_swagger_ui_html)
+# fastapi.applications.get_redoc_html = add_mermaid_support(fastapi.openapi.docs.get_redoc_html)
+# app = FastAPI()
 ```
 
-`imp.reload(fastapi.applications)`重载了模块, 使得替换函数能生效
+`fastapi.applications`模块通过 `from import` 语法导入并使用相应的函数对象, 所以需要通过 `imp.reload(fastapi.applications)`重载模块.
 
-替换行为必须发生在 `FastAPI` 对象实例化之前.
-
-否则需要重新调用对象的`setup`方法重置文档路由.
+或者直接修改 `fastapi.applications.get_swagger_ui_html` 和 `fastapi.applications.get_redoc_html` 函数对象.
 
 ### 在函数注释中添加mermaid图表
 
@@ -76,3 +80,5 @@ def hello():
     """
     return "hello world"
 ```
+
+[参考示例](https://github.com/qsoyq/pytoolkit/blob/main/examples/mermaid_with_fastapi_openapi/main.py)
