@@ -48,9 +48,8 @@ import imp
 import fastapi
 import fastapi.applications
 import fastapi.openapi.docs
-from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
-fastapi.openapi.docs.get_swagger_ui_html = add_mermaid_support(get_swagger_ui_html)
-fastapi.openapi.docs.get_redoc_html = add_mermaid_support(get_redoc_html)
+fastapi.openapi.docs.get_swagger_ui_html = add_mermaid_support(fastapi.openapi.docs.get_swagger_ui_html)
+fastapi.openapi.docs.get_redoc_html = add_mermaid_support(fastapi.openapi.docs.get_redoc_html)
 imp.reload(fastapi.applications)
 app = FastAPI()
 ```
