@@ -98,6 +98,7 @@ nav:
       - cloudflared: tools/cloudflared.md
       - trojan: tools/trojan.md
       - macos: tools/macos.md
+      - linux: tools/linux.md
       - docker: tools/docker.md
     #   - SonarQube: tools/SonarQube.md
 

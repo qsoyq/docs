@@ -1,5 +1,13 @@
 # Docker
 
+## 常用命令
+
+查看数据卷占用大小
+
+```shell
+docker system df -v
+```
+
 ## Control Docker with systemd
 
 为 docker daemon 设置 http/https 代理
