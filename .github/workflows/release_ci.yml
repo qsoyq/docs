@@ -17,3 +17,10 @@ jobs:
           cache: true
           cache_registry: aevea/cache
           tag: ${{ github.ref_name }}
+
+      - name: Slack Notification
+        uses: bryannice/gitactions-slack-notification@2.0.0
+        env:
+          SLACK_INCOMING_WEBHOOK: ${{ secrets.SLACK_INCOMING_WEBHOOK }}
+          SLACK_MESSAGE: 'run all jobs done.'
+          SLACK_TITLE: 'Github Action Notification'
