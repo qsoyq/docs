@@ -17,7 +17,6 @@ jobs:
           cache: true
           cache_registry: aevea/cache
           tag: latest
-          debug: true
 
       - name: Slack Notification
         uses: bryannice/gitactions-slack-notification@2.0.0
