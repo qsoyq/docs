@@ -173,20 +173,38 @@ qsoyq/github-action-image
 
 根据交互提示, 输入对应的仓库地址和注册 token
 
+导出环境变量
+
 ```shell
-docker exec -it github-runner-{repo-name} bash -c "./config.sh"
+export container=github-runner
+```
+
+```shell
+docker exec -it ${container} bash -c "./config.sh"
 ```
 
 注册系统服务
 
 ```shell
-docker exec -it -u 0 github-runner-{repo-name} bash -c "./svc.sh install"
+docker exec -it ${container} bash -c "./svc.sh install"
 ```
 
 启动
 
 ```shell
-docker exec -it -u 0 github-runner-{repo-name} bash -c "./svc.sh start"
+docker exec -it ${container} bash -c "./svc.sh start"
+```
+
+重启服务
+
+```shell
+docker exec -it  ${container} bash -c "systemctl status $(systemctl list-units --type service|grep actions|awk '{print $1}')"
+```
+
+添加到宿主机自启动脚本
+
+```shell
+docker exec -it ${container} bash -c "./svc.sh start"
 ```
 
 ### github actions 本地配置
