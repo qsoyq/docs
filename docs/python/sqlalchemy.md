@@ -1,4 +1,4 @@
-# sqlalchemy
+[sqlalchemy-2.0](https://docs.sqlalchemy.org/en/20/)
 
 [quickstart](https://docs.sqlalchemy.org/en/14/orm/quickstart.html)
 
@@ -22,7 +22,7 @@ Base = declarative_base()
 Base.metadata.create_all(engine) # 在关联到所有的 Model 之后
 ```
 
-crud 2.0 style
+## crud 2.0 style
 
 query
 
