@@ -10,4 +10,4 @@ uptime-kuma 前端使用了 axios, 频繁出现`maxContentLength size of -1 exce
 
 [![uptime-kuma-maxContentLength_size_of_-1_exceeded.png]][uptime-kuma-maxContentLength_size_of_-1_exceeded.png]
 
-[uptime-kuma-maxContentLength_size_of_-1_exceeded.png]: https://telegraph.wangqs.cn/file/12f8bb4386afb8e17d433.png
+[uptime-kuma-maxContentLength_size_of_-1_exceeded.png]: https://telegraph.19940731.xyz/file/12f8bb4386afb8e17d433.png

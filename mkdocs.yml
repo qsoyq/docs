@@ -1,139 +1,140 @@
 site_name: docs
 
 site_description: >-
-  Create a branded static site from a set of Markdown files to host the
-  documentation of your Open Source or commercial project
+    Create a branded static site from a set of Markdown files to host the
+    documentation of your Open Source or commercial project
 
 repo_name: qsoyq/docs
 repo_url: https://github.com/qsoyq/docs
 edit_uri: edit/main/docs/
 
 markdown_extensions:
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: "!!python/name:pymdownx.superfences.fence_code_format"
 
 theme:
-  name: material
-  include_search_page: true
-  search_index_only: true
-  features:
-    - content.code.annotate
-    - content.tabs.link
+    name: material
+    include_search_page: true
+    search_index_only: true
+    features:
+        - content.code.annotate
+        - content.tabs.link
 
-    # - header.autohide
+        # - header.autohide
 
-    - navigation.instant
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.prune
-    - navigation.indexes
-    - navigation.top
+        - navigation.instant
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.prune
+        - navigation.indexes
+        - navigation.top
 
-    - toc.follow
+        - toc.follow
 
-    - search.highlight
-    - search.share
-    - search.suggest
+        - search.highlight
+        - search.share
+        - search.suggest
 
-  palette:
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+    palette:
+        # Palette toggle for light mode
+        - scheme: default
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        # Palette toggle for dark mode
+        - scheme: slate
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
 extra:
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/qsoyq
-
+    social:
+        - icon: fontawesome/brands/github-alt
+          link: https://github.com/qsoyq
 
 plugins:
-  - search
-  # - redirects:
-  #     redirect_maps:
-  #       changelog/insiders.md: insiders/changelog.md
-  #       reference/meta-tags.md: reference/index.md
-  #       reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
-  #       sponsorship.md: insiders/index.md
-  #       upgrading.md: upgrade.md
-  - minify:
-      minify_html: true
+    - search
+    # - redirects:
+    #     redirect_maps:
+    #       changelog/insiders.md: insiders/changelog.md
+    #       reference/meta-tags.md: reference/index.md
+    #       reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
+    #       sponsorship.md: insiders/index.md
+    #       upgrading.md: upgrade.md
+    - minify:
+          minify_html: true
 
 nav:
-  - Home: index.md
-  - Python:
-      - python/index.md
-      - threading: python/threading.md
-      - profile: python/profile.md
-      - diagrams: python/diagrams.md
-      - fastapi: python/fastapi.md
-      - httpx: python/httpx.md
-      - sqlalchemy: python/sqlalchemy.md
-      - pep: python/pep.md
-      - gRPC: python/grpc.md
-      - typer: python/typer.md
-      - sentry: python/sentry.md
-      - wtfpython: python/wtfpython.md
-      - poetry: python/poetry.md
+    - Home: index.md
+    - Stash:
+          - Stash/stoverride.md
+          - Stash/stashlink.md
+    #   - Python:
+    #       - python/index.md
+    #       - threading: python/threading.md
+    #       - profile: python/profile.md
+    #       - diagrams: python/diagrams.md
+    #       - fastapi: python/fastapi.md
+    #       - httpx: python/httpx.md
+    #       - sqlalchemy: python/sqlalchemy.md
+    #       - pep: python/pep.md
+    #       - gRPC: python/grpc.md
+    #       - typer: python/typer.md
+    #       - sentry: python/sentry.md
+    #       - wtfpython: python/wtfpython.md
+    #       - poetry: python/poetry.md
 
-  - Tools:
-      - zimaboard: tools/zimaboard.md
-      - ci: tools/ci.md
-      - mermaid: tools/mermaid.md
-      - pre-commit: tools/pre-commit.md
-      - traefik: tools/traefik.md
-      - dev-tool: tools/dev-tool.md
-      - frp: tools/frp.md
-      - vscode: tools/vscode.md
-      - cloudflared: tools/cloudflared.md
-      - trojan: tools/trojan.md
-      - macos: tools/macos.md
-      - linux: tools/linux.md
-      - docker: tools/docker.md
-    #   - SonarQube: tools/SonarQube.md
+    #   - Tools:
+    #       - zimaboard: tools/zimaboard.md
+    #       - ci: tools/ci.md
+    #       - mermaid: tools/mermaid.md
+    #       - pre-commit: tools/pre-commit.md
+    #       - traefik: tools/traefik.md
+    #       - dev-tool: tools/dev-tool.md
+    #       - frp: tools/frp.md
+    #       - vscode: tools/vscode.md
+    #       - cloudflared: tools/cloudflared.md
+    #       - trojan: tools/trojan.md
+    #       - macos: tools/macos.md
+    #       - linux: tools/linux.md
+    #       - docker: tools/docker.md
+    #     #   - SonarQube: tools/SonarQube.md
 
-  - Protocol:
-      - network: protocol/network.md
-      - http: protocol/http.md
-      - asgi: protocol/asgi.md
-      - grpc: protocol/grpc.md
-      - oauth: protocol/oauth.md
+    #   - Protocol:
+    #       - network: protocol/network.md
+    #       - http: protocol/http.md
+    #       - asgi: protocol/asgi.md
+    #       - grpc: protocol/grpc.md
+    #       - oauth: protocol/oauth.md
 
-  - Mofish: mofish.md
+    - Mofish: mofish.md
 
-  - Note:
-      - why: note/why.md
-      - http 客户端实现思路: note/http-client.md
-      - fastapi header 处理: note/fastapi-headers.md
-      - http 客户端封装: note/http-rpc-client.md
-      - python 彩色化日志: note/color-log.md
-      - mysql:
-        - note/mysql/index.md
-        - mysql_foreign_key_constraints: note/mysql/mysql_foreign_key_constraints.md
-      - docker-swarm: note/docker-swarm.md
-      - traefik:
-        - note/traefik/index.md
-        - server:
-          - note/traefik/server.md
-          - entrypoint: note/traefik/entrypoint.md
-          - watcher:
-            - watcher: note/traefik/watcher.md
-            - provider: note/traefik/provider.md
-            - listener: note/traefik/watcher_listener.md
-        - plugin: note/traefik/plugin.md
-      - mq:
-        - redis-stream: note/mq/redis-stream.md
-      - traefik-forwardauth-oauth-middleware: note/traefik-forwardauth-oauth-middleware.md
+    - Note:
+          - why: note/why.md
+    #       - http 客户端实现思路: note/http-client.md
+    #       - fastapi header 处理: note/fastapi-headers.md
+    #       - http 客户端封装: note/http-rpc-client.md
+    #       - python 彩色化日志: note/color-log.md
+    #       - mysql:
+    #         - note/mysql/index.md
+    #         - mysql_foreign_key_constraints: note/mysql/mysql_foreign_key_constraints.md
+    #       - docker-swarm: note/docker-swarm.md
+    #       - traefik:
+    #         - note/traefik/index.md
+    #         - server:
+    #           - note/traefik/server.md
+    #           - entrypoint: note/traefik/entrypoint.md
+    #           - watcher:
+    #             - watcher: note/traefik/watcher.md
+    #             - provider: note/traefik/provider.md
+    #             - listener: note/traefik/watcher_listener.md
+    #         - plugin: note/traefik/plugin.md
+    #       - mq:
+    #         - redis-stream: note/mq/redis-stream.md
+    #       - traefik-forwardauth-oauth-middleware: note/traefik-forwardauth-oauth-middleware.md
 
-  - More:
-      - bug: bug.md
+    # - More:
+    #       - bug: bug.md

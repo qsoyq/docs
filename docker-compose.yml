@@ -1,19 +1,10 @@
-version: '3'
-
-networks:
-  default:
-    name: my_bridge
-    external: true
-
 services:
 
     docs:
-        network_mode: my_bridge
         platform: linux/amd64
         image: squidfunk/mkdocs-material
-        container_name: docs
-        restart: always
-
+        restart: unless-stopped
+        mem_limit: 128m
         volumes:
           - ./docs:/docs/docs
           - ./mkdocs.yml:/docs/mkdocs.yml
@@ -21,16 +12,5 @@ services:
 
         labels:
             - traefik.enable=true
-
-            - traefik.http.routers.docs.rule=(Host(`local.wangqs.work`) || Host(`local.wangqs.cn`)) && PathPrefix(`/docs/`)
+            - traefik.http.routers.docs.rule=Host(`docs.docker.localhost`)
             - traefik.http.routers.docs.entrypoints=web
-
-            - traefik.http.routers.docs-https.rule=Host(`local.wangqs.work`) && PathPrefix(`/docs/`)
-            - traefik.http.routers.docs-https.entrypoints=websecure
-            - traefik.http.routers.docs-https.tls=true
-
-            - "traefik.http.middlewares.docs-path-replace.replacepathregex.regex=^/docs/(.*)"
-            - "traefik.http.middlewares.docs-path-replace.replacepathregex.replacement=/$$1"
-
-            - traefik.http.routers.docs.middlewares=docs-path-replace@docker
-            - traefik.http.routers.docs-https.middlewares=docs-path-replace@docker
