@@ -16,6 +16,8 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/slim
 
 anti-AD 规则可通过 `AdGuardHome` 屏蔽
 
+试用 doh: `https://ahd.19940731.xyz/dns-query`
+
 ### 可莉油管去广告
 
 ```txt
