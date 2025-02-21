@@ -14,9 +14,13 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/FuckLau
 https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/slim.stoverride
 ```
 
-anti-AD 规则可通过 `AdGuardHome` 屏蔽
+### AdguardHome DNS
 
-试用 doh: `https://ahd.19940731.xyz/dns-query`
+```txt
+https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/dns.stoverride
+```
+
+自建 DNS 服务器，基于 `AdguardHome`, 添加 `anti-AD` 去广告规则
 
 ### 可莉油管去广告
 
