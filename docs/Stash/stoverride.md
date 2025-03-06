@@ -154,7 +154,7 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/kfc.
 https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/mcd.stoverride
 ```
 
-[点击安装](https://link.stash.ws/install-override/rraw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/mcd.stoverride)
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/mcd.stoverride)
 
 ### 谷歌搜索
 
