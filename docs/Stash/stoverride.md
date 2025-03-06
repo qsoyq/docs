@@ -195,6 +195,14 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/amdc
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/amdc.stoverride)
 
+### 腾讯医典
+
+```txt
+https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/baike.qq.stoverride
+```
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/baike.qq.stoverride)
+
 ## 增强
 
 ### 笔趣阁增强
