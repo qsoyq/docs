@@ -34,6 +34,12 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/yout
 https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/twitter.stoverride
 ```
 
+### 起点读书去广告
+
+```txt
+https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/qidian.stoverride
+```
+
 ## 增强
 
 ### 笔趣阁增强
