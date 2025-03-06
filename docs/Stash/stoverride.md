@@ -10,7 +10,7 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/dns.sto
 
 自建 DNS 服务器，基于 `AdguardHome`, 添加 `anti-AD` 去广告规则
 
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/dns.stoverride)
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/dns.stoverride)
 
 ### 可莉油管
 
