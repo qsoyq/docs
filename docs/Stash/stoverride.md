@@ -4,7 +4,7 @@
 
 ### AdguardHome DNS
 
-自建 DNS 服务器，基于 `AdguardHome`, 添加 `anti-AD` 去广告规则
+- 自建 DNS 服务器，基于 `AdguardHome`, 添加 `anti-AD` 去广告规则
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/dns.stoverride)
 
@@ -14,7 +14,7 @@
 
 ### 推特网页版
 
-移动端可能会导致bug不可用
+- 移动端可能会导致bug不可用
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/twitter.stoverride)
 
@@ -133,7 +133,7 @@
 
 ### Apple 系统定位
 
-飞行模式下，启动地图应用刷新系统定位
+- 飞行模式下，启动地图应用刷新系统定位
 
 [点击安装 - EE](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/location/ee.stoverride)
 [点击安装 - UK](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/location/uk.stoverride)
@@ -145,16 +145,38 @@
 
 ### 阿里云 OSS 图床在线预览
 
-仅对阿里云默认域名生效， 如 `example.oss-cn-shanghai.aliyuncs.com`
+- 仅对阿里云默认域名生效， 如 `example.oss-cn-shanghai.aliyuncs.com`
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/inline.oss.aliyun.stoverride)
 
 ### 可莉资源浏览器访问
 
-绕过浏览器访问 WAF 拦截
+- 绕过浏览器访问 WAF 拦截
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/kelee.stoverride)
 
 ### 小红书图床浏览器预览
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/cdn.xhs.stoverride)
+
+### AiHubMix 重定向
+
+- 通过透明代理的方式重定向 OpenAI API 到 AiHubMix.
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/aihubmix.stoverride)
+
+### NGA 收藏帖优化
+
+- 移除收藏列表中已过期或权限不足的帖子
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/favor.nga.stoverride)
+
+### Github 文件资源优化
+
+- 修改 github 仓库文件资源的文件类型
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/media.github.stoverride)
+
+### iRingo 资源在线预览
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/inline.nsringo.stoverride)
