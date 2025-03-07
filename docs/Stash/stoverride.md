@@ -272,3 +272,13 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance
 ```
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/redirect.google.stoverride)
+
+### 阿里云 OSS 图床在线预览
+
+仅对阿里云默认域名生效， 如 `example.oss-cn-shanghai.aliyuncs.com`
+
+```txt
+https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/inline.oss.aliyun.stoverride
+```
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/inline.oss.aliyun.stoverride)
