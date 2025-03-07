@@ -135,9 +135,9 @@
 
 - 飞行模式下，启动地图应用刷新系统定位
 
-[点击安装 - EE](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/location/ee.stoverride)
-[点击安装 - UK](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/location/uk.stoverride)
-[点击安装 - US](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/location/us.stoverride)
+- [点击安装 - EE](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/location/ee.stoverride)
+- [点击安装 - UK](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/location/uk.stoverride)
+- [点击安装 - US](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/location/us.stoverride)
 
 ### 谷歌搜索重定向
 
