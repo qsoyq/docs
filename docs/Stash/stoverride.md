@@ -129,6 +129,8 @@
 
 ### 美团域名重定向
 
+- [美团外卖AppDebug域名分流BUG的问题](https://www.blueskyxn.com/202311/6919.html)
+
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/meituan/redirect.stoverride)
 
 ### Apple 系统定位
