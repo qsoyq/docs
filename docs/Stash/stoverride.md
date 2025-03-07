@@ -203,6 +203,14 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/baik
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/baike.qq.stoverride)
 
+### 小黑盒
+
+```txt
+https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/xiaoheihe.stoverride
+```
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/xiaoheihe.stoverride)
+
 ## 增强
 
 ### 笔趣阁增强
