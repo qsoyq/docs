@@ -22,7 +22,7 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/yout
 
 ### 推特网页版
 
-移动端可能会导致bug移动端不可用
+移动端可能会导致bug不可用
 
 ```txt
 https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/twitter.stoverride
