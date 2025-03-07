@@ -264,3 +264,11 @@ https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/locatio
 ```
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/location/us.stoverride)
+
+### 谷歌搜索重定向
+
+```txt
+https://raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/redirect.google.stoverride
+```
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/redirect.google.stoverride)
