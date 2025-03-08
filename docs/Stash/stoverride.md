@@ -127,10 +127,6 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/bq/bq.enhance.stoverride)
 
-### HTTP抓包
-
-[点击安装](raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/debug/http-capture.stoverride)
-
 ### 美团域名重定向
 
 - [美团外卖AppDebug域名分流BUG的问题](https://www.blueskyxn.com/202311/6919.html)
@@ -186,3 +182,13 @@
 ### iRingo 资源在线预览
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/inline.nsringo.stoverride)
+
+## 调试
+
+### 禁用 QUIC
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/reject.quic.stoverride)
+
+### HTTP抓包
+
+[点击安装](raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/debug/http-capture.stoverride)
