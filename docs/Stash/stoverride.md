@@ -117,6 +117,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/xiaoheihe.stoverride)
 
+### 雷神加速器
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/leigod.stoverride)
+
 ## 增强
 
 ### 笔趣阁增强
