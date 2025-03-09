@@ -121,6 +121,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/leigod.stoverride)
 
+### 七猫小说
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/qimao.stoverride)
+
 ## 增强
 
 ### 笔趣阁增强
