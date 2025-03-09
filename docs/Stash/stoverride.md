@@ -2,6 +2,8 @@
 
 ## 去广告
 
+部分开屏广告会被缓存，需要删除 app 重新下载
+
 ### AdguardHome DNS
 
 - 自建 DNS 服务器，基于 `AdguardHome`, 添加 `anti-AD` 去广告规则
