@@ -125,6 +125,12 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/qimao.stoverride)
 
+### speedtest
+
+- iOS App 测速结果页广告(好像没什么用)
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/speedtest.stoverride)
+
 ## 增强
 
 ### 笔趣阁增强
