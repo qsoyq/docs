@@ -2,6 +2,7 @@
 
 [自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/shell/main/config/stash/default.yaml)
 
+部分覆写失效的情况下，尝试关闭 设置＞网络设置 中的仅打开 tunnel 模式
 ## 去广告
 
 部分开屏广告会被缓存，需要删除 app 重新下载
