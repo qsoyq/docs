@@ -133,6 +133,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/speedtest.stoverride)
 
+### 1024.day
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/1024.day.stoverride)
+
 ## 增强
 
 ### 笔趣阁增强
