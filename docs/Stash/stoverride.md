@@ -202,6 +202,15 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/inline.nsringo.stoverride)
 
+## 签到
+
+### 塔斯汀
+
+- 需要手动在塔斯汀小程序上进行一次签到获取请求信息
+- 签到会根据活动周期失效，失效后需要重新在小程序上执行签到
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/sign/testien.sign.stoverride)
+
 ## 调试
 
 ### 禁用 QUIC
