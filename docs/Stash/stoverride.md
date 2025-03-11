@@ -3,6 +3,7 @@
 [自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/shell/main/config/stash/default.yaml)
 
 部分覆写失效的情况下，尝试关闭 设置＞网络设置 中的仅打开 tunnel 模式
+
 ## 去广告
 
 部分开屏广告会被缓存，需要删除 app 重新下载
@@ -170,16 +171,6 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/inline.oss.aliyun.stoverride)
 
-### 可莉资源浏览器访问
-
-- 绕过浏览器访问 WAF 拦截
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/kelee.stoverride)
-
-### 小红书图床浏览器预览
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/cdn.xhs.stoverride)
-
 ### AiHubMix 重定向
 
 - 通过透明代理的方式重定向 OpenAI API 到 AiHubMix.
@@ -191,16 +182,6 @@
 - 移除收藏列表中已过期或权限不足的帖子
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/favor.nga.stoverride)
-
-### Github 文件资源优化
-
-- 修改 github 仓库文件资源的文件类型
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/media.github.stoverride)
-
-### iRingo 资源在线预览
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/inline.nsringo.stoverride)
 
 ## 签到
 
@@ -220,3 +201,23 @@
 ### HTTP抓包
 
 [点击安装](raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/debug/http-capture.stoverride)
+
+### Github 文件资源优化
+
+- 修改 github 仓库文件资源的文件类型
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/media.github.stoverride)
+
+### iRingo 资源在线预览
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/inline.nsringo.stoverride)
+
+### 可莉资源浏览器访问
+
+- 绕过浏览器访问 WAF 拦截
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/kelee.stoverride)
+
+### 小红书图床浏览器预览
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/cdn.xhs.stoverride)
