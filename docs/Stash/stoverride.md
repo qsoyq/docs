@@ -192,6 +192,12 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/sign/testien.sign.stoverride)
 
+## 磁贴
+
+### 解锁检测
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/tiles/MediaUnlockChecker.stoverride)
+
 ## 调试
 
 ### 禁用 QUIC
