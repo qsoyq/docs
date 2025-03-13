@@ -1,8 +1,11 @@
 # stoverride
 
-[自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/shell/main/config/stash/default.yaml)
+- 部分覆写失效的情况下，尝试关闭 设置＞网络设置 中的仅打开 tunnel 模式
+- Stash for mac 覆写失效时，尝试关闭并重新打开 mitm
 
-部分覆写失效的情况下，尝试关闭 设置＞网络设置 中的仅打开 tunnel 模式
+## 规则
+
+[自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/shell/main/config/stash/default.yaml)
 
 ## 去广告
 
@@ -15,6 +18,8 @@
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/dns.stoverride)
 
 ### 可莉油管
+
+- 网页端尝试刷新浏览器缓存
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/youtube-remove-ads.stoverride)
 
