@@ -205,6 +205,12 @@
 
 ### 解锁检测
 
+- 哔哩哔哩港澳台
+- chatgpt iOS
+- chatgpt web
+- gemini
+- youtube premium
+
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/tiles/MediaUnlockChecker.stoverride)
 
 ## 调试
