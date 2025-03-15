@@ -158,6 +158,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/18comic.stoverride)
 
+### 91Porn
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/91porn.stoverride)
+
 ## 增强
 
 ### 美团域名重定向
