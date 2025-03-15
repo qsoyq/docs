@@ -162,6 +162,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/91porn.stoverride)
 
+### Instagram
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/instagram.stoverride)
+
 ## 增强
 
 ### 美团域名重定向
