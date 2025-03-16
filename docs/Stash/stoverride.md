@@ -225,6 +225,18 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/tiles/MediaUnlockChecker.stoverride)
 
+### 网络信息 X
+
+- [折腾啥](https://t.me/zhetengsha)
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/tiles/x.network.stoverride)
+
+### 代理IP
+
+-[StevenKwan/stash-waffle](https://github.com/StevenKwan/stash-waffle)
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/tiles/ip.stoverride)
+
 ## 调试
 
 ### 禁用 QUIC
