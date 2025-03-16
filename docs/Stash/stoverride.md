@@ -233,7 +233,7 @@
 
 ### 代理IP
 
--[StevenKwan/stash-waffle](https://github.com/StevenKwan/stash-waffle)
+- [StevenKwan/stash-waffle](https://github.com/StevenKwan/stash-waffle)
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/tiles/ip.stoverride)
 
