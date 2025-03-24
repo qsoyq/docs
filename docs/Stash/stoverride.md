@@ -164,6 +164,8 @@
 
 ### Instagram
 
+- 网页端去广告, 移动端不兼容
+
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/instagram.stoverride)
 
 ## 增强
