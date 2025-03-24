@@ -268,3 +268,7 @@
 ### 小红书图床浏览器预览
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/cdn.xhs.stoverride)
+
+### 禁用fakeip
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/debug/fakeip.disable.stoverride)
