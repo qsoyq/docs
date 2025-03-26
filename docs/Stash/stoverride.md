@@ -5,7 +5,8 @@
 
 ## 规则
 
-[自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/shell/main/config/stash/default.yaml)
+- [自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/shell/main/config/stash/default.yaml)
+- [微信直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/wechat.stoverride)
 
 ## 去广告
 
