@@ -14,6 +14,7 @@
 
 ## 去广告
 
+****
 部分开屏广告会被缓存，需要删除 app 重新下载
 
 ### AdguardHome DNS
@@ -172,6 +173,10 @@
 - 网页端去广告, 移动端不兼容
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/instagram.stoverride)
+
+### 高德地图
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/amap.stoverride)
 
 ## 增强
 
