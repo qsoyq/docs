@@ -13,6 +13,7 @@
 - [talkatone分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/talkatone.stoverride)
 - [分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/direct.stoverride)
 - [分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/reject.stoverride)
+- [高端口直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/high-port-direct.stoverride)
 
 ## 去广告
 
