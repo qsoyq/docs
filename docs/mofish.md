@@ -27,4 +27,4 @@
 - [鱼塘](https://mo.fish/)
 - [nga](https://bbs.nga.cn/)
 - [v2ex](https://www.v2ex.com/)
-- [程序员做饭指南](https://cook.aiurs.co/)
+- [程序员做饭指南](https://cook.aiursoft.cn/)
