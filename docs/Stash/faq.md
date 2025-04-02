@@ -22,3 +22,11 @@
 需要手动在订阅里添加flag参数，修改如下
 
 `https://example.org/api/v1/client/subscribe?token=token` -> `https://example.org/api/v1/client/subscribe?token=token&flag=clash`
+
+## 统计中订阅流量显示规则
+
+1. 订阅的配置，手动更新，会基于 head 方法请求订阅接口更新数据
+2. 配置中的远程代理集，会根据缓存结果显示，手动更新无效，更新远程资源无效，刷新机制不明
+3. 覆写中填写的远程代理集，统计中不显示订阅的流量信息
+
+部分机场不支持 head 方法的订阅请求，所以在 stash中无法刷新统计订阅流量，只显示第一次拉取配置的流量统计信息。
