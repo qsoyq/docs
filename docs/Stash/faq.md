@@ -34,4 +34,4 @@
 ## DNS查询规则
 
 1. 直连请求会触发 DNS 查询
-2. 匹配规则时遇到IP-CIDR 或 GEOIP， 且规则未添加 *no-resolve*
+2. 匹配规则时遇到IP-CIDR、IP-ASN、GEOIP， 且规则未添加 *no-resolve*
