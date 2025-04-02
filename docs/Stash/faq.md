@@ -2,7 +2,7 @@
   
 ## 添加远程代理集后，策略组不显示代理集里的节点
 
-底部导航栏策略组＞左上角小云朵图标＞proxies 列表＞左滑更新＞ 显示更新时间和数量表示成功
+底部导航栏策略组＞左上角小云朵图标 ＞ proxies 列表 ＞ 左滑更新 ＞ 显示更新时间和数量表示成功
 
 ![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/a4c3ea84bc4b4e4599281ee56014cb7a.jpeg)
 ![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/b7a197f5417943419ec6c2626a81a1b8.jpeg)
@@ -30,3 +30,8 @@
 3. 覆写中填写的远程代理集，统计中不显示订阅的流量信息
 
 部分机场不支持 head 方法的订阅请求，所以在 stash中无法刷新统计订阅流量，只显示第一次拉取配置的流量统计信息。
+
+## DNS查询规则
+
+1. 直连请求会触发 DNS 查询
+2. 匹配规则时遇到IP-CIDR 或 GEOIP， 且规则未添加 *no-resolve*
