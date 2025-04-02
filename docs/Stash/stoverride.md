@@ -8,12 +8,12 @@
 ## 规则
 
 - [自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/shell/main/config/stash/default.yaml)
-- [微信分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/wechat.stoverride)
-- [电报分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/telegram.stoverride)
-- [talkatone分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/talkatone.stoverride)
-- [分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/direct.stoverride)
-- [分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/reject.stoverride)
-- [高端口直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/rule/high-port-direct.stoverride)
+- [微信分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/wechat.stoverride)
+- [电报分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/telegram.stoverride)
+- [talkatone分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/talkatone.stoverride)
+- [分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/direct.stoverride)
+- [分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.stoverride)
+- [高端口直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/high-port-direct.stoverride)
 
 ## 去广告
 
