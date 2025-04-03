@@ -17,7 +17,6 @@
 
 ## 去广告
 
-****
 部分开屏广告会被缓存，需要删除 app 重新下载
 
 ### AdguardHome DNS
@@ -84,7 +83,7 @@
 
 ### 微博国际版
 
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/ad/weibointl.stoverride)
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/weibo.intl.stoverride)
 
 ### 美团外卖
 
@@ -218,6 +217,12 @@
 - 移除收藏列表中已过期或权限不足的帖子
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/shell/main/config/stash/override/enhance/favor.nga.stoverride)
+
+### 微博页面访问跳转
+
+- 访问网页版微博时，发送通知, 点击通知跳转到微博国际版
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/weibo.intl.stoverride)
 
 ## 签到
 
