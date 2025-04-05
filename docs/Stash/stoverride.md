@@ -160,7 +160,7 @@
 - 飞行模式下，启动地图应用刷新系统定位
 
 - [点击安装 - US](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/apple.location.us.stoverride)
-- [点击安装 - UK](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/apple.location.ek.stoverride)
+- [点击安装 - UK](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/apple.location.uk.stoverride)
 
 ### 谷歌搜索重定向
 
