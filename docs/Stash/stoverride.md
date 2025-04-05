@@ -182,7 +182,7 @@
 
 - 移除收藏列表中已过期或权限不足的帖子
 
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/nga.stoverride)
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/favor.nga.stoverride)
 
 ### 微博页面访问跳转
 
