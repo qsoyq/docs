@@ -143,6 +143,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/amap.stoverride)
 
+### 京东
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/jd.stoverride)
+
 ## 增强
 
 ### 91Porn
