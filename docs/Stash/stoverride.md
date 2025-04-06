@@ -221,6 +221,14 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/tile/x.network.stoverride)
 
+### 货币汇率
+
+- 覆写来源: <https://whatshub.top/stoverride/rates.stoverride>
+- 脚本来源: <https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/rates.js>
+- 数据源API: <https://api.exchangerate-api.com/v4/latest/CNY>
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/tile/currency-exchange-rate.stoverride)
+
 ## 调试
 
 ### 禁用 QUIC
