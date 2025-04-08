@@ -75,7 +75,7 @@ nav:
           - Stash/stashlink.md
           - Stash/snellv3.md
           - Stash/trojan.md
-      - Python:
+    - Python:
           - python/index.md
           - threading: python/threading.md
           - profile: python/profile.md
@@ -90,7 +90,7 @@ nav:
           - wtfpython: python/wtfpython.md
           - poetry: python/poetry.md
 
-      - Tools:
+    - Tools:
           - zimaboard: tools/zimaboard.md
           - ci: tools/ci.md
           - mermaid: tools/mermaid.md
@@ -104,9 +104,9 @@ nav:
           - macos: tools/macos.md
           - linux: tools/linux.md
           - docker: tools/docker.md
-        #   - SonarQube: tools/SonarQube.md
+    #   - SonarQube: tools/SonarQube.md
 
-      - Protocol:
+    - Protocol:
           - network: protocol/network.md
           - http: protocol/http.md
           - asgi: protocol/asgi.md
@@ -122,21 +122,21 @@ nav:
           - http 客户端封装: note/http-rpc-client.md
           - python 彩色化日志: note/color-log.md
           - mysql:
-            - note/mysql/index.md
-            - mysql_foreign_key_constraints: note/mysql/mysql_foreign_key_constraints.md
+                - note/mysql/index.md
+                - mysql_foreign_key_constraints: note/mysql/mysql_foreign_key_constraints.md
           - docker-swarm: note/docker-swarm.md
           - traefik:
-            - note/traefik/index.md
-            - server:
-              - note/traefik/server.md
-              - entrypoint: note/traefik/entrypoint.md
-              - watcher:
-                - watcher: note/traefik/watcher.md
-                - provider: note/traefik/provider.md
-                - listener: note/traefik/watcher_listener.md
-            - plugin: note/traefik/plugin.md
+                - note/traefik/index.md
+                - server:
+                      - note/traefik/server.md
+                      - entrypoint: note/traefik/entrypoint.md
+                      - watcher:
+                            - watcher: note/traefik/watcher.md
+                            - provider: note/traefik/provider.md
+                            - listener: note/traefik/watcher_listener.md
+                - plugin: note/traefik/plugin.md
           - mq:
-            - redis-stream: note/mq/redis-stream.md
+                - redis-stream: note/mq/redis-stream.md
           - traefik-forwardauth-oauth-middleware: note/traefik-forwardauth-oauth-middleware.md
 
     - More:
