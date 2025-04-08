@@ -1,10 +1,13 @@
 # stoverride
 
-- 部分覆写失效的情况下，尝试关闭/打开 设置＞网络设置 中的仅打开 tunnel 模式
-- Stash for mac 覆写失效时，尝试关闭并重新打开 mitm
+## 覆写无效
+
+- 尝试关闭/打开 设置＞网络设置＞仅打开 tunnel 模式
+- 尝试关闭并重新打开 mitm
 - 保持最新测试版
 - 尝试关闭包含所有网络
 - 更多设置＞其他＞删除临时文件
+- 更新/重装覆写订阅
 
 ## 规则
 
@@ -14,7 +17,6 @@
 - [talkatone分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/talkatone.stoverride)
 - [分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/direct.stoverride)
 - [分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.stoverride)
-- [高端口直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/high-port-direct.stoverride)
 
 ## 去广告
 
