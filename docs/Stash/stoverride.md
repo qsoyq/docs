@@ -66,8 +66,8 @@
 
 ### 小红书
 
-[自用 - 点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/rednote.stoverride)
-[第三方推荐使用 - 点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/rednote_v2.stoverride)
+- [自用 - 点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/rednote.stoverride)
+- [第三方推荐使用 - 点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/rednote_v2.stoverride)
 
 ### 便利蜂
 
