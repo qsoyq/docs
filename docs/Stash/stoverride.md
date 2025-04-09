@@ -66,7 +66,8 @@
 
 ### 小红书
 
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/rednote.stoverride)
+[自用 - 点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/rednote.stoverride)
+[第三方推荐使用 - 点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/rednote_v2.stoverride)
 
 ### 便利蜂
 
@@ -239,6 +240,7 @@
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/reject.quic.stoverride)
 
 ### HTTP抓包
+
 - 会导致部分网络无法访问
 - 会导致app store无法打开
 
