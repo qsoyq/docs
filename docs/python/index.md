@@ -2,6 +2,4 @@
 
 [Python strftime cheatsheet](https://strftime.org/)
 
-[![strftime]][strftime]
-
-[strftime]: https://telegraph.wangqs.cn/file/ac0fc39362df4667fc2dd.jpg
+![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/e29f88289ae14ae29ed1bc7a1aa11d98.jpeg)

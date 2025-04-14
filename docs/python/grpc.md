@@ -62,14 +62,9 @@ grpc 提供了 metadata, 通过读写 metadata, 来达到 header 相关的需求
 
 那么基于猴子补丁, 定制 `_UnaryUnaryMultiCallable`, `_UnaryStreamMultiCallable`, `_StreamUnaryMultiCallable`, `_StreamStreamMultiCallable`  并重写 `_blocking` 方法, 将 `host` 参数传递到 `segregated_call` 内.
 
-[![grpc_call_blocking_before]][grpc_call_blocking_before]
 
-[grpc_call_blocking_before]: https://telegraph.wangqs.cn/file/58567135e9b6781449341.png
-
-[![grpc_call_blocking_after]][grpc_call_blocking_after]
-
-[grpc_call_blocking_after]: https://telegraph.wangqs.cn/file/54b1dfd94d6b77a7a98b0.png
-
+![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/f782d00d20aa4f1da22bff1a70229899.png)
+![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/cb6742e401634f59be741de4136c8f33.png)
 优点是非常灵活, 可以轻松修改组件逻辑.
 
 缺点是过于灵活, 可读性极差, 容易埋雷, 尤其是在版本更新的时候.
@@ -283,10 +278,7 @@ betterproto 在生成代码时, 会将流式响应的返回值定义为`AsyncIte
 ```shell
 error: Return type "AsyncIterator[SubResponse]" of "sub" incompatible with return type "Coroutine[Any, Any, AsyncIterator[SubResponse]]" in supertype "RedisStreamServiceBase"
 ```
-
-[![py_grpc_bp_ai]][py_grpc_bp_ai]
-
-[py_grpc_bp_ai]: https://telegraph.wangqs.cn/file/5697490426a4b41032200.png
+![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/a0cfa62ff9674bb5b1c5832d95936f74.png)
 
 实际上, 在 `async def` 中, 使用 `yield` 关键字能实现 `AsyncIterator` 需要的功能.
 
