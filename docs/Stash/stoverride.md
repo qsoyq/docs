@@ -25,6 +25,9 @@
 ### AdguardHome DNS
 
 - 自建 DNS 服务器，基于 `AdguardHome`, 添加 `anti-AD` 等去广告规则
+- 建议按如下操作打开 Fallback DNS
+    - iOS: 设置 -> 网络设置 -> Fallback DNS
+    - Mac: 控制面板 -> 设置 -> 网络 -> Fallback DNS
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/dns/adguardhome.stoverride)
 
