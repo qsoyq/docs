@@ -11,17 +11,22 @@
 
 ## 规则
 
+- [自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/stash/main/config/default.yaml)
+
+### 生效顺序
+
 1. 覆写规则优先级大于配置文件
 2. 覆写顺序决定生效顺序
 3. 顺序安排
-   1. pcdn拒绝
-   2. 分流屏蔽
-   3. 电报分流代理
-   4. talkatone分流代理
-   5. 分流直连
-   6. 微信分流直连
+    1. pcdn拒绝
+    2. 分流屏蔽
+    3. 电报分流代理
+    4. talkatone分流代理
+    5. 分流直连
+    6. 微信分流直连
 
-- [自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/stash/main/config/default.yaml)
+### 覆写规则
+
 - [微信分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/wechat.stoverride)
 - [电报分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/telegram.stoverride)
 - [talkatone分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/talkatone.stoverride)
