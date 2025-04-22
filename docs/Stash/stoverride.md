@@ -19,20 +19,22 @@
 2. 覆写顺序决定生效顺序
 3. 顺序安排
     1. pcdn拒绝
-    2. 分流屏蔽
-    3. 电报分流代理
-    4. talkatone分流代理
-    5. 分流直连
-    6. 微信分流直连
+    2. AD分流屏蔽
+    3. 分流屏蔽
+    4. 电报分流代理
+    5. talkatone分流代理
+    6. 分流直连
+    7. 微信分流直连
 
 ### 覆写规则
 
-- [微信分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/wechat.stoverride)
+- [pcdn拒绝](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.pcdn.stoverride)
+- [AD分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/ad.reject.stoverride)
+- [分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.stoverride)
 - [电报分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/telegram.stoverride)
 - [talkatone分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/talkatone.stoverride)
 - [分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/direct.stoverride)
-- [分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.stoverride)
-- [pcdn拒绝](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.pcdn.stoverride)
+- [微信分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/wechat.stoverride)
 
 ## 去广告
 
