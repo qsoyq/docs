@@ -18,16 +18,18 @@
 1. 覆写规则优先级大于配置文件
 2. 覆写顺序决定生效顺序
 3. 顺序安排
-    1. pcdn拒绝
-    2. AD分流屏蔽
-    3. 分流屏蔽
-    4. 电报分流代理
-    5. talkatone分流代理
-    6. 分流直连
-    7. 微信分流直连
+      1. QUIC拒绝
+      2. pcdn拒绝
+      3. AD分流屏蔽
+      4. 分流屏蔽
+      5. 电报分流代理
+      6. talkatone分流代理
+      7. 分流直连
+      8. 微信分流直连
 
 ### 覆写规则
 
+- [QUIC拒绝](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/reject.quic.stoverride)
 - [pcdn拒绝](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.pcdn.stoverride)
 - [AD分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/ad.reject.stoverride)
 - [分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.stoverride)
@@ -259,10 +261,6 @@
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/tile/currency-exchange-rate.stoverride)
 
 ## 调试
-
-### 禁用 QUIC
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/reject.quic.stoverride)
 
 ### HTTP抓包
 
