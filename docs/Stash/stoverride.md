@@ -9,6 +9,14 @@
 - 更多设置＞其他＞删除临时文件
 - 更新/重装覆写订阅
 
+### Access has been restricted
+
+![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/69329bfce8f446f2b22982ab5ec2adc0.jpeg)
+
+安装覆写或更新资源时遇到上述错误, 需要安装下面的覆写解决
+
+- [点击安装](https://link.stash.ws/install-override/p.19940731.xyz/api/stash/stoverride/tiles/github/rate-limit)
+
 ## 规则
 
 - [自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/stash/main/config/default.yaml)
