@@ -59,11 +59,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/dns/adguardhome.stoverride)
 
-### 可莉油管
+### 油管去广告
 
-- 网页端尝试刷新浏览器缓存
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/youtube.stoverride)
+- [点击安装 - 可莉油管去广告](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/youtube.stoverride)
+- [点击安装 - 自用补充](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/ads.youtube.stoverride)
 
 ### 推特
 
