@@ -245,6 +245,16 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/sign/tastien.stoverride)
 
+## 订阅
+
+### Nutsfind
+
+- 需要在网站上登陆一次
+- 会定时检查余额，并在余额变动达到阈值后发送通知
+- 默认余额变动每 3 元通知一次
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/subscribe/balance.nutsfind.stoverride)
+
 ## 磁贴
 
 ### 解锁检测
