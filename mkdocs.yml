@@ -75,6 +75,7 @@ nav:
           - Stash/stashlink.md
           - Stash/snellv3.md
           - Stash/trojan.md
+          - Stash/reality.md
     - Python:
           - python/index.md
           - threading: python/threading.md
