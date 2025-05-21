@@ -1,11 +1,16 @@
-## Debian12
+## 安装Python依赖
 
 ```bash
-apt update && apt install python3-pip python3-full -y
-python3 -m venv ~/.python/venv
-source ~/.python/venv/bin/activate
+sudo su
+curl https://raw.githubusercontent.com/qsoyq/shell/main/scripts/bash/pyenv-installer.sh | bash
+source ~/.bash_profile
+pyenv install 3.13.1 && pyenv global 3.13.1 && pyenv rehash
 python3 -m pip install typer rich
-python3 <(curl -sL https://raw.githubusercontent.com/qsoyq/shell/main/scripts/python/vpn/reality.py)
 ```
 
-## AlmaLinux8.1
+## 安装 Reality
+
+```bash
+sudo su
+python3 <(curl -sL https://raw.githubusercontent.com/qsoyq/shell/main/scripts/python/vpn/reality.py)
+```
