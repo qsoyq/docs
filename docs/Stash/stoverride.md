@@ -53,7 +53,7 @@
 ### AdguardHome DNS
 
 - 自建 DNS 服务器，基于 `AdguardHome`, 添加 `anti-AD` 等去广告规则
-- 目前无法之类，延迟较大，不建议使用
+- 目前直连延迟较大，不建议使用
 - 建议按如下操作打开 Fallback DNS
     - iOS: 设置 -> 网络设置 -> Fallback DNS
     - Mac: 控制面板 -> 设置 -> 网络 -> Fallback DNS
