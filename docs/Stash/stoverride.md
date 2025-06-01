@@ -1,22 +1,5 @@
 # stoverride
 
-## 覆写无效
-
-- 尝试关闭/打开 设置＞网络设置＞仅打开 tunnel 模式
-- 尝试关闭并重新打开 mitm
-- 保持最新测试版
-- 尝试关闭包含所有网络
-- 更多设置＞其他＞删除临时文件
-- 更新/重装覆写订阅
-
-### Access has been restricted
-
-![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/69329bfce8f446f2b22982ab5ec2adc0.jpeg)
-
-安装覆写或更新资源时遇到上述错误, 需要安装下面的覆写解决
-
-- [点击安装](https://link.stash.ws/install-override/p.19940731.xyz/api/stash/stoverride/tiles/github/rate-limit)
-
 ## 规则
 
 - [自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/stash/main/config/default.yaml)
@@ -28,8 +11,8 @@
 3. 顺序安排
       1. QUIC拒绝
       2. pcdn拒绝
-      3. AD分流屏蔽
-      4. 分流屏蔽
+      3. 分流屏蔽
+      4. AD分流屏蔽
       5. 电报分流代理
       6. talkatone分流代理
       7. 分流直连
@@ -39,8 +22,8 @@
 
 - [QUIC拒绝](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/reject.quic.stoverride)
 - [pcdn拒绝](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.pcdn.stoverride)
-- [AD分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/ad.reject.stoverride)
 - [分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/reject.stoverride)
+- [AD分流屏蔽](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/ad.reject.stoverride)
 - [电报分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/telegram.stoverride)
 - [talkatone分流代理](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/talkatone.stoverride)
 - [分流直连](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/bypass/direct.stoverride)
@@ -315,3 +298,20 @@
 ### 禁用fakeip
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/fakeip.disable.stoverride)
+
+## 覆写无效
+
+- 尝试关闭/打开 设置＞网络设置＞仅打开 tunnel 模式
+- 尝试关闭并重新打开 mitm
+- 保持最新测试版
+- 尝试关闭包含所有网络
+- 更多设置＞其他＞删除临时文件
+- 更新/重装覆写订阅
+
+### Access has been restricted
+
+![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/69329bfce8f446f2b22982ab5ec2adc0.jpeg)
+
+安装覆写或更新资源时遇到上述错误, 需要安装下面的覆写解决
+
+- [点击安装](https://link.stash.ws/install-override/p.19940731.xyz/api/stash/stoverride/tiles/github/rate-limit)
