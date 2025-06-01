@@ -2,8 +2,6 @@
 
 ## 规则
 
-- [自用配置文件](https://link.stash.ws/install-config/raw.githubusercontent.com/qsoyq/stash/main/config/default.yaml)
-
 ### 生效顺序
 
 1. 覆写规则优先级大于配置文件
