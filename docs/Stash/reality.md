@@ -20,3 +20,5 @@ python3 <(curl -sL https://raw.githubusercontent.com/qsoyq/shell/main/scripts/py
 ```bash
 wget https://raw.githubusercontent.com/yeahwu/v2ray-wss/main/tcp-window.sh && bash tcp-window.sh
 ```
+
+此脚本运行后会重启服务器。
