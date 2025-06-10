@@ -14,3 +14,9 @@ python3 -m pip install typer rich
 sudo su
 python3 <(curl -sL https://raw.githubusercontent.com/qsoyq/shell/main/scripts/python/vpn/reality.py)
 ```
+
+## TCP优化
+
+```bash
+wget https://raw.githubusercontent.com/yeahwu/v2ray-wss/main/tcp-window.sh && bash tcp-window.sh
+```
