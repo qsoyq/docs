@@ -171,6 +171,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/1024.day.stoverride)
 
+### Twitch
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/twitch.stoverride)
+
 ## 增强
 
 ### 91Porn
