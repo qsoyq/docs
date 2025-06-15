@@ -78,5 +78,5 @@ mkdir /root/realm
 ```
 
 ```bash
-nohup realm -c /etc/realm/config.toml > /root/realm/nohup.out 2>&1 &
+nohup realm -c /etc/realm/hysteria2.toml > /root/realm/nohup.out 2>&1 &
 ```
