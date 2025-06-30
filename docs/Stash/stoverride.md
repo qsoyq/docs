@@ -175,6 +175,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/twitch.stoverride)
 
+### 鸡柳大人
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/jiliudaren.stoverride)
+
 ## 增强
 
 ### 91Porn
