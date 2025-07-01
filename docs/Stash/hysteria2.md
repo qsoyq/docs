@@ -1,4 +1,4 @@
-## 一键脚本
+## hysteria2一键脚本
 
 ```bash
 wget git.io/tcp-wss.sh && bash tcp-wss.sh
@@ -12,71 +12,34 @@ wget git.io/tcp-wss.sh && bash tcp-wss.sh
 
 ```bash
 mkdir /etc/realm
-```
-
-```bash
-cat > /etc/realm/hysteria2.toml << EOF
-[log]
-# 日志级别: off,debug,info,error,warn 测试时可用debug, 验证ok可用改成off
-level = "off"
-# 日志路径，默认是stdout, 标准输出，通常不需要
-# output = "/var/log/realm.log"
-
-[network]
-# 同时开启tcp和udp
-no_tcp = false
-use_udp = true
-
-[[endpoints]]
-listen = "0.0.0.0:7100"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7101"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7102"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7103"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7104"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7105"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7106"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7107"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7108"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7109"
-remote = "127.0.0.1:7222"
-
-[[endpoints]]
-listen = "0.0.0.0:7110"
-remote = "127.0.0.1:7222"
-EOF
-```
-
-```bash
 mkdir /root/realm
 ```
 
+### 安装Python依赖
+
+```bash
+curl https://raw.githubusercontent.com/qsoyq/shell/main/scripts/bash/pyenv-installer.sh | bash
+source ~/.bash_profile
+pyenv install 3.13.1 && pyenv global 3.13.1 && pyenv rehash
+python3 -m pip install typer rich toml
+```
+
+### 通过脚本输出realm配置
+
+```bash
+# python3 <(curl -sL https://raw.githubusercontent.com/qsoyq/shell/main/scripts/python/vpn/realm.py) --help
+python3 <(curl -sL https://raw.githubusercontent.com/qsoyq/shell/main/scripts/python/vpn/realm.py) --listen-port 7100-7110 --remote-port 7222 > /etc/realm/hysteria2.toml
+```
+
+### 启动 realm
+
 ```bash
 nohup realm -c /etc/realm/hysteria2.toml > /root/realm/nohup.out 2>&1 &
+```
+
+### crontab 开机启动
+
+```bash
+PATH=/root/.pyenv/shims:/root/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+@reboot nohup realm -c /etc/realm/hysteria2.toml > /root/realm/nohup.out 2>&1 &
 ```
