@@ -12,7 +12,7 @@ sudo su
 curl https://raw.githubusercontent.com/qsoyq/shell/main/scripts/bash/pyenv-installer.sh | bash
 source ~/.bash_profile
 pyenv install 3.13.1 && pyenv global 3.13.1 && pyenv rehash
-python3 -m pip install typer rich
+python3 -m pip install typer rich toml
 ```
 
 ## 安装 Reality
