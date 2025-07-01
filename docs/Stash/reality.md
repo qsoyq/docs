@@ -33,7 +33,8 @@ python3 <(curl -sL https://raw.githubusercontent.com/qsoyq/shell/main/scripts/py
     --uuid ed305e8e-123b-4477-a66d-52c68df4e199 \
     --short-ids 88 \
     --public-key ShmdO7WIVSv0Xy8qo4N3Ach8YwG8-_prSumyWDsgg0g \
-    --private-key 8C6QksOsd5DXWqpEOa3bdSaaUDnGhOC4EoljJg7uuV8
+    --private-key 8C6QksOsd5DXWqpEOa3bdSaaUDnGhOC4EoljJg7uuV8 \
+    --no-limit-fallback
 ```
 
 ## TCP优化
