@@ -183,6 +183,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/missav.stoverride)
 
+### nodeseek
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/nodeseek.stoverride)
+
 ## 增强
 
 ### 91Porn
