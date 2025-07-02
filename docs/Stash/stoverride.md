@@ -179,6 +179,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/jiliudaren.stoverride)
 
+### missav
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/missav.stoverride)
+
 ## 增强
 
 ### 91Porn
