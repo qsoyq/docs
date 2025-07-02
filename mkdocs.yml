@@ -72,6 +72,7 @@ nav:
     - Stash:
           - Stash/faq.md
           - Stash/stoverride.md
+          - Stash/iperf3.md
           - Stash/stashlink.md
           - Stash/snellv3.md
           - Stash/trojan.md
