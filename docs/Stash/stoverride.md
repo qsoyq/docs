@@ -187,6 +187,10 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/nodeseek.stoverride)
 
+### pornhub
+
+[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/pornhub.stoverride)
+
 ## 增强
 
 ### 91Porn
