@@ -4,6 +4,7 @@
 
 ```bash
 sudo su
+touch ~/.bash_profile
 ```
 
 ## 安装Python依赖
@@ -13,7 +14,6 @@ sudo su
 ### Debian12 venv 虚拟环境
 
 ```bash
-touch ~/.bash_profile
 apt update && apt install python3-pip python3-venv -y
 python3 -m venv ~/python
 echo "source ~/python/bin/activate" >> ~/.bash_profile
