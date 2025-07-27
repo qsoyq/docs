@@ -8,24 +8,46 @@ sudo su
 
 ## 安装Python依赖
 
+以下二选一, 时间、磁盘空间允许, 建议 `pyenv` 方式
+
+### Debian12 venv 虚拟环境
+
+```bash
+touch ~/.bash_profile
+apt update && apt install python3-pip python3-venv -y
+python3 -m venv ~/python
+echo "source ~/python/bin/activate" >> ~/.bash_profile
+source ~/.bash_profile
+python3 -m pip install typer rich toml dateparser
+```
+
+### 基于 pyenv 安装
+
+耗时较长, 但是兼容多系统(大概?)
+
 ```bash
 curl https://raw.githubusercontent.com/qsoyq/shell/main/scripts/bash/pyenv-installer.sh | bash
 source ~/.bash_profile
 pyenv install 3.13.1 -v && pyenv global 3.13.1 && pyenv rehash
-python3 -m pip install typer rich toml
+python3 -m pip install typer rich toml dateparser
 ```
 
 ## 安装 Reality
+
+服务端配置路径: */usr/local/etc/xray/config.json*
+
+客户端配置路径: */usr/local/etc/xray/reclient.json*
 
 ```bash
 # 按提示输入参数
 python3 <(curl -sL https://raw.githubusercontent.com/qsoyq/shell/main/scripts/python/vpn/reality.py)
 ```
 
-### 传参示例
+### 传递参数
+
+同时传递所有参数, 所有机器使用同一份配置, 客户端仅需要修改 ip 即可。
 
 ```bash
-# 直接传入所有参数
 python3 <(curl -sL https://raw.githubusercontent.com/qsoyq/shell/main/scripts/python/vpn/reality.py) \
     --sni www.amazon.com \
     --no-sniff \
