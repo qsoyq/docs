@@ -70,15 +70,15 @@ plugins:
 nav:
     - Home: index.md
     - Stash:
-          - Stash/faq.md
-          - Stash/stoverride.md
-          - Stash/iperf3.md
-          - Stash/stashlink.md
-          - Stash/snellv3.md
-          - Stash/trojan.md
-          - Stash/reality.md
-          - Stash/hysteria2.md
-          - Stash/yacd.md
+          - stash/faq.md
+          - stash/stoverride.md
+          - stash/iperf3.md
+          - stash/stashlink.md
+          - stash/snellv3.md
+          - stash/trojan.md
+          - stash/reality.md
+          - stash/hysteria2.md
+
     - Python:
           - python/index.md
           - threading: python/threading.md
@@ -93,6 +93,9 @@ nav:
           - sentry: python/sentry.md
           - wtfpython: python/wtfpython.md
           - poetry: python/poetry.md
+    - Service:
+          - dns: service/dns.md
+          - yacd: service/yacd.md
 
     - Tools:
           - zimaboard: tools/zimaboard.md
