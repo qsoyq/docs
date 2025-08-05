@@ -78,6 +78,7 @@ nav:
           - Stash/trojan.md
           - Stash/reality.md
           - Stash/hysteria2.md
+          - Stash/yacd.md
     - Python:
           - python/index.md
           - threading: python/threading.md
