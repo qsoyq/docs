@@ -70,14 +70,14 @@ plugins:
 nav:
     - Home: index.md
     - Stash:
-          - stash/faq.md
-          - stash/stoverride.md
-          - stash/iperf3.md
-          - stash/stashlink.md
-          - stash/snellv3.md
-          - stash/trojan.md
-          - stash/reality.md
-          - stash/hysteria2.md
+          - Stash/faq.md
+          - Stash/stoverride.md
+          - Stash/iperf3.md
+          - Stash/stashlink.md
+          - Stash/snellv3.md
+          - Stash/trojan.md
+          - Stash/reality.md
+          - Stash/hysteria2.md
 
     - Python:
           - python/index.md
