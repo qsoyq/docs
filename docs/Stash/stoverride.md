@@ -303,12 +303,6 @@
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/inline.nsringo.stoverride)
 
-### 可莉资源浏览器访问
-
-- 绕过浏览器访问 WAF 拦截
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/kelee.stoverride)
-
 ### 小红书图床浏览器预览
 
 [点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/cdn.rednote.stoverride)
