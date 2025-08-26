@@ -70,8 +70,8 @@ plugins:
 nav:
     - Home: index.md
     - Stash:
-          - Stash/faq.md
           - Stash/stoverride.md
+          - Stash/faq.md
           - Stash/iperf3.md
           - Stash/stashlink.md
           - Stash/snellv3.md

@@ -1,14 +1,5 @@
 # stoverride
 
-覆写安装没有效果时，尝试以下办法
-
-- 尝试关闭/打开 设置＞网络设置＞仅打开 tunnel 模式
-- 尝试关闭并重新打开 mitm
-- 保持最新测试版
-- 尝试关闭包含所有网络
-- 更多设置＞其他＞删除临时文件
-- 更新/重装覆写订阅
-
 ## 规则
 
 | 名称              | 仓库地址                                                                                              | 安装地址                                                                                                                             | 备注           |
@@ -75,109 +66,55 @@
 | 饿了么   | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/eleme.stoverride)          | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/eleme.stoverride)          |      |
 | 中国移动 | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/cmcc.stoverride)           | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/cmcc.stoverride)           |      |
 
+## 磁贴
+
+| 名称         | 仓库地址                                                                                                       | 安装地址                                                                                                                                      | 备注 |
+| ------------ | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| 解锁检测磁贴 | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/tile/media-unlock-checker.stoverride)   | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/tile/media-unlock-checker.stoverride)   |      |
+| 货币汇率磁贴 | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/tile/currency-exchange-rate.stoverride) | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/tile/currency-exchange-rate.stoverride) |      |
+
+## 调试
+
+| 名称                | 仓库地址                                                                                              | 安装地址                                                                                                                             | 备注 |
+| ------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---- |
+| HTTP 抓包           | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/debug/http-capture.stoverride) | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/http-capture.stoverride) |      |
+| Github 文件类型重写 | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/debug/media.github.stoverride) | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/media.github.stoverride) |      |
+
 ## 其他
 
-### 美团域名重定向
+| 名称                | 仓库地址                                                                                                           | 安装地址                                                                                                                                          | 备注                   |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| 谷歌搜索重定向      | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/enhance/redirect.google.stoverride)         | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/redirect.google.stoverride)         |                        |
+| 美团域名重定向      | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/enhance/meituan.domain.redirect.stoverride) | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/meituan.domain.redirect.stoverride) |                        |
+| Apple系统定位 - US  | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/enhance/apple.location.us.stoverride)       | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/apple.location.us.stoverride)       |                        |
+| Apple系统定位 - UK  | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/enhance/apple.location.uk.stoverride)       | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/apple.location.uk.stoverride)       |                        |
+| 阿里云 OSS 预览     | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/enhance/inline.oss.aliyun.stoverride)       | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/inline.oss.aliyun.stoverride)       | 仅对阿里云默认域名生效 |
+| AiHubMix 重定向     | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/enhance/aihubmix.stoverride)                | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/aihubmix.stoverride)                |                        |
+| NGA优化             | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/enhance/favor.nga.stoverride)               | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/favor.nga.stoverride)               |                        |
+| 微博优化            | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/enhance/weibo.intl.stoverride)              | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/weibo.intl.stoverride)              |                        |
+| 塔斯汀签到          | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/sign/tastien.stoverride)                    | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/sign/tastien.stoverride)                    |                        |
+| iRingo 预览         | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/debug/inline.nsringo.stoverride)            | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/inline.nsringo.stoverride)            |                        |
+| 小红书图床预览      | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/debug/cdn.rednote.stoverride)               | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/cdn.rednote.stoverride)               |                        |
+| 禁用 Fakeip         | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/debug/fakeip.disable.stoverride)            | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/fakeip.disable.stoverride)            |                        |
+| Github 访问语言重写 | [在线API](https://p.19940731.xyz/api/stash/stoverride/tiles/github/rate-limit)                                     | [安装地址](https://link.stash.ws/install-override/p.19940731.xyz/api/stash/stoverride/tiles/github/rate-limit)                                    |                        |
 
-- [美团外卖AppDebug域名分流BUG的问题](https://www.blueskyxn.com/202311/6919.html)
+## FAQ
 
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/meituan.domain.redirect.stoverride)
+插件故障上报邮箱: <support@19940731.xyz>
 
-### Apple 系统定位
+### 覆写未生效
 
-- 飞行模式下，启动地图应用刷新系统定位
+覆写安装没有效果时，尝试以下办法
 
-- [点击安装 - US](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/apple.location.us.stoverride)
-- [点击安装 - UK](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/apple.location.uk.stoverride)
-
-### 谷歌搜索重定向
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/redirect.google.stoverride)
-
-### 阿里云 OSS 图床在线预览
-
-- 仅对阿里云默认域名生效， 如 `example.oss-cn-shanghai.aliyuncs.com`
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/inline.oss.aliyun.stoverride)
-
-### AiHubMix 重定向
-
-- 通过透明代理的方式重定向 OpenAI API 到 AiHubMix.
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/aihubmix.stoverride)
-
-### NGA 收藏帖优化
-
-- 移除收藏列表中已过期或权限不足的帖子
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/favor.nga.stoverride)
-
-### 微博页面访问跳转
-
-- 访问网页版微博时，发送通知, 点击通知跳转到微博国际版
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/weibo.intl.stoverride)
-
-### 塔斯汀
-
-- 需要手动在塔斯汀小程序上进行一次签到获取请求信息
-- 签到会根据活动周期失效，失效后需要重新在小程序上执行签到
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/sign/tastien.stoverride)
-
-### 解锁检测
-
-- 哔哩哔哩港澳台
-- chatgpt iOS
-- chatgpt web
-- gemini
-- youtube premium
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/tile/media-unlock-checker.stoverride)
-
-### 网络信息 X
-
-- [折腾啥](https://t.me/zhetengsha)
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/tile/x.network.stoverride)
-
-### 货币汇率
-
-- 覆写来源: <https://whatshub.top/stoverride/rates.stoverride>
-- 脚本来源: <https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/rates.js>
-- 数据源API: <https://api.exchangerate-api.com/v4/latest/CNY>
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/tile/currency-exchange-rate.stoverride)
-
-### HTTP抓包
-
-- 会导致部分网络无法访问
-- 会导致app store无法打开
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/http-capture.stoverride)
-
-### Github 文件资源优化
-
-- 修改 github 仓库文件资源的文件类型
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/media.github.stoverride)
-
-### iRingo 资源在线预览
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/inline.nsringo.stoverride)
-
-### 小红书图床浏览器预览
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/cdn.rednote.stoverride)
-
-### 禁用fakeip
-
-[点击安装](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/fakeip.disable.stoverride)
+- 尝试关闭/打开 设置＞网络设置＞仅打开 tunnel 模式
+- 尝试关闭并重新打开 **mitm**
+- 保持最新测试版
+- 尝试关闭包含所有网络
+- 更多设置＞其他＞删除临时文件
+- 更新/重装覆写订阅
 
 ### Access has been restricted
 
 ![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/69329bfce8f446f2b22982ab5ec2adc0.jpeg)
 
-安装覆写或更新资源时遇到上述错误, 需要安装下面的覆写解决
-
-- [点击安装](https://link.stash.ws/install-override/p.19940731.xyz/api/stash/stoverride/tiles/github/rate-limit)
+使用 `Github 访问语言重写` 插件绕过限制
