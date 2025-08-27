@@ -98,6 +98,7 @@
 | 小红书图床预览      | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/debug/cdn.rednote.stoverride)               | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/cdn.rednote.stoverride)               |                        |
 | 禁用 Fakeip         | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/debug/fakeip.disable.stoverride)            | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/debug/fakeip.disable.stoverride)            |                        |
 | Github 访问语言重写 | [在线API](https://p.19940731.xyz/api/stash/stoverride/tiles/github/rate-limit)                                     | [安装地址](https://link.stash.ws/install-override/p.19940731.xyz/api/stash/stoverride/tiles/github/rate-limit)                                    |                        |
+| NGA 优化            | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/enhance/nga.stoverride)                     | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/enhance/nga.stoverride)                     |                        |
 
 ## FAQ
 
