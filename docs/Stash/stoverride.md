@@ -53,6 +53,7 @@
 | Universal Links Banner | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/UniversalLinksBanner.stoverride) | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/UniversalLinksBanner.stoverride) | 禁止在网站上显示跳转到客户端的横幅/需要重新安装 App |
 | Telegram               | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/telegram.stoverride)             | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/telegram.stoverride)             |                                                     |
 | Imgur                  | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/imgur.stoverride)                | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/imgur.stoverride)                |                                                     |
+| 知乎                   | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/zhihu.stoverride)                | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/zhihu.stoverride)                |                                                     |
 
 ---
 这部分待修复或待验证
