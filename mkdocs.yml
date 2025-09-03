@@ -80,71 +80,78 @@ nav:
           - Stash/hysteria2.md
 
     - Python:
-          - python/index.md
-          - threading: python/threading.md
-          - profile: python/profile.md
-          - diagrams: python/diagrams.md
-          - fastapi: python/fastapi.md
-          - httpx: python/httpx.md
-          - sqlalchemy: python/sqlalchemy.md
-          - pep: python/pep.md
-          - gRPC: python/grpc.md
-          - typer: python/typer.md
-          - sentry: python/sentry.md
-          - wtfpython: python/wtfpython.md
-          - poetry: python/poetry.md
+          - Python: python/python.md
+          - 彩色化日志: note/color-log.md
+          - 标准库:
+                - threading: python/threading.md
+                - profile: python/profile.md
+          - 三方库:
+                - httpx: python/httpx.md
+                - sqlalchemy: python/sqlalchemy.md
+                - gRPC: python/grpc.md
+                - typer: python/typer.md
+                - sentry: python/sentry.md
+                - FastAPI:
+                      - 关于FastAPI: python/fastapi/fastapi.md
+                      - Headers是如何处理的: python/fastapi/headers.md
+          - 编码:
+                - pep: python/pep.md
+
+                - wtfpython: python/wtfpython.md
+          - 开发工具:
+                - poetry: python/poetry.md
+
     - Service:
-          - dns: service/dns.md
-          - yacd: service/yacd.md
+          - DNS: service/dns.md
+          - Yacd: service/yacd.md
 
-    - Tools:
-          - zimaboard: tools/zimaboard.md
-          - ci: tools/ci.md
-          - mermaid: tools/mermaid.md
-          - pre-commit: tools/pre-commit.md
-          - traefik: tools/traefik.md
-          - dev-tool: tools/dev-tool.md
-          - frp: tools/frp.md
-          - vscode: tools/vscode.md
-          - cloudflared: tools/cloudflared.md
-          - trojan: tools/trojan.md
-          - macos: tools/macos.md
-          - linux: tools/linux.md
-          - docker: tools/docker.md
-    #   - SonarQube: tools/SonarQube.md
-
-    - Protocol:
-          - network: protocol/network.md
-          - http: protocol/http.md
-          - asgi: protocol/asgi.md
-          - grpc: protocol/grpc.md
-          - oauth: protocol/oauth.md
-
-    - Mofish: mofish.md
-
-    - Note:
-          - why: note/why.md
-          - http 客户端实现思路: note/http-client.md
-          - fastapi header 处理: note/fastapi-headers.md
-          - http 客户端封装: note/http-rpc-client.md
-          - python 彩色化日志: note/color-log.md
-          - mysql:
-                - note/mysql/index.md
-                - mysql_foreign_key_constraints: note/mysql/mysql_foreign_key_constraints.md
-          - docker-swarm: note/docker-swarm.md
-          - traefik:
-                - note/traefik/index.md
-                - server:
-                      - note/traefik/server.md
-                      - entrypoint: note/traefik/entrypoint.md
-                      - watcher:
-                            - watcher: note/traefik/watcher.md
-                            - provider: note/traefik/provider.md
-                            - listener: note/traefik/watcher_listener.md
+    - Notes:
+          - Note: note/note.md
+          - Why: note/why.md
+          - Bug: bug.md
+          - 摸鱼网站: mofish.md
+          - HTTP 客户端实现思路: note/http-client.md
+          - HTTP RPC Client 封装思考: note/http-rpc-client.md
+          - MySQL:
+                - 关于 MySQL: note/mysql/mysql.md
+                - MySQL 外键约束: note/mysql/mysql_foreign_key_constraints.md
+          - Docker:
+                - Docker Swam 使用体验: note/docker-swarm.md
+          - Traefik:
+                - note/traefik/部署.md
                 - plugin: note/traefik/plugin.md
-          - mq:
-                - redis-stream: note/mq/redis-stream.md
-          - traefik-forwardauth-oauth-middleware: note/traefik-forwardauth-oauth-middleware.md
+                - middleware:
+                      - note/traefik-forwardauth-oauth-middleware.md
 
-    - More:
-          - bug: bug.md
+                - 源码解读:
+                      - note/traefik/source/index.md
+                      - note/traefik/source/server.md
+                      - entrypoint: note/traefik/source/entrypoint.md
+                      - watcher:
+                            - watcher: note/traefik/source/watcher.md
+                            - provider: note/traefik/source/provider.md
+                            - listener: note/traefik/source/watcher_listener.md
+
+          - 消息队列:
+                - redis-stream: note/mq/redis-stream.md
+          - Tools:
+                - Zimaboard 软路由体验: tools/zimaboard.md
+                - ci: tools/ci.md
+                - mermaid: tools/mermaid.md
+                - pre-commit: tools/pre-commit.md
+                - traefik: tools/traefik.md
+                - dev-tool: tools/dev-tool.md
+                - frp: tools/frp.md
+                - vscode: tools/vscode.md
+                - cloudflared: tools/cloudflared.md
+                - trojan: tools/trojan.md
+                - macos: tools/macos.md
+                - linux: tools/linux.md
+                - docker: tools/docker.md
+
+          - Protocol:
+                - network: protocol/network.md
+                - http: protocol/http.md
+                - asgi: protocol/asgi.md
+                - grpc: protocol/grpc.md
+                - oauth: protocol/oauth.md

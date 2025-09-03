@@ -138,4 +138,4 @@ if noon_time:
     print("Time at noon is", noon_time)
 ```
 
-在 `3.5` 以前的版本, 如果`datetime.time`对象表示的是 UTC 下的午夜时间, 对象会别认为是 Flase
+在 `3.5` 以前的版本, 如果`datetime.time`对象表示的是 UTC 下的午夜时间, 对象会被认为是 Flase

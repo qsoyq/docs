@@ -7,6 +7,8 @@
 
 修改源码, 打包一个适配 stash 的版本
 
+- <https://github.com/qsoyq/yacd/commit/ce01846d181dee5804f62f61c371c299847ed50e>
+
 ### 线上地址
 
 - <http://yacd.19940731.xyz>
