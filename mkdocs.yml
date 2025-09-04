@@ -110,8 +110,10 @@ nav:
           - Why: note/why.md
           - Bug: bug.md
           - 摸鱼网站: mofish.md
-          - HTTP 客户端实现思路: note/http-client.md
-          - HTTP RPC Client 封装思考: note/http-rpc-client.md
+          - 日常:
+                - HTTP 客户端实现思路: note/http-client.md
+                - HTTP RPC Client 封装思考: note/http-rpc-client.md
+                - iOS Safari 如何唤醒App: note/safariOpenApp.md
           - MySQL:
                 - 关于 MySQL: note/mysql/mysql.md
                 - MySQL 外键约束: note/mysql/mysql_foreign_key_constraints.md
