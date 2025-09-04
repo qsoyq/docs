@@ -103,6 +103,7 @@ nav:
 
     - Service:
           - RSS: service/rss.md
+          - iCalendar: service/calendar.md
           - DNS: service/dns.md
           - Yacd: service/yacd.md
 
