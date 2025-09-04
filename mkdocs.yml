@@ -102,6 +102,7 @@ nav:
                 - poetry: python/poetry.md
 
     - Service:
+          - RSS: service/rss.md
           - DNS: service/dns.md
           - Yacd: service/yacd.md
 
@@ -114,6 +115,8 @@ nav:
                 - HTTP 客户端实现思路: note/http-client.md
                 - HTTP RPC Client 封装思考: note/http-rpc-client.md
                 - iOS Safari 如何唤醒App: note/safariOpenApp.md
+          - VSCode:
+                - MarkdwonTable插件使用: note/vscode-markdown-table.md
           - MySQL:
                 - 关于 MySQL: note/mysql/mysql.md
                 - MySQL 外键约束: note/mysql/mysql_foreign_key_constraints.md
