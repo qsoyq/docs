@@ -116,6 +116,9 @@ nav:
                 - HTTP 客户端实现思路: note/http-client.md
                 - HTTP RPC Client 封装思考: note/http-rpc-client.md
                 - iOS Safari 如何唤醒App: note/safariOpenApp.md
+          - RSShub:
+                - 抖音:
+                      - 用户: note/rsshub/douyin/user.md
           - VSCode:
                 - MarkdwonTable插件使用: note/vscode-markdown-table.md
           - MySQL:
