@@ -117,6 +117,7 @@ nav:
                 - HTTP RPC Client 封装思考: note/http-rpc-client.md
                 - iOS Safari 如何唤醒App: note/safariOpenApp.md
                 - 中国移动小技巧: note/cmcc.md
+                - PerplexityPro: note/daily/perplexity.md
           - RSShub:
                 - 抖音:
                       - 用户: note/rsshub/douyin/user.md
