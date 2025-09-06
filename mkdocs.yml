@@ -70,7 +70,7 @@ plugins:
 nav:
     - Home: index.md
     - Stash:
-          - Stash/stoverride.md
+          - 覆写: Stash/stoverride.md
           - HTTP重写: Stash/rewrite.md
           - 常见问题: Stash/faq.md
           #   - Stash/iperf3.md

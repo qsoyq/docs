@@ -1,4 +1,4 @@
-# stoverride
+# 覆写
 
 ## 规则
 
