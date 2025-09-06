@@ -4,7 +4,7 @@
 
 ## Body Rewrite
 
-3.0.0(9121) 引入如下的 body-rewrite
+3.0.0(971) 引入如下的 body-rewrite
 
 - request-body
     - request-jq
