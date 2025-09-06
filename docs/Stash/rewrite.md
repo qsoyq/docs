@@ -6,8 +6,18 @@
 
 3.0.0(9121) 引入如下的 body-rewrite
 
-- request-jq, request-replace-regex, request-json-replace, request-json-add, request-json-del
-- response-jq, response-replace-regex, response-json-replace, response-json-add, response-json-del
+- request-body
+    - request-jq
+    - request-replace-regex
+    - request-json-replace
+    - request-json-add
+    - request-json-del
+- response-body
+    - response-jq
+    - response-replace-regex
+    - response-json-replace
+    - response-json-add
+    - response-json-del
 
 ### Request/Response
 
