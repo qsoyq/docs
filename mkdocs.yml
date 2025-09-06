@@ -76,6 +76,7 @@ nav:
           #   - Stash/iperf3.md
           - StashLink配置: Stash/stashlink.md
           #   - Stash/snellv3.md
+          - Stash API: Stash/api.md
 
     - Python:
           - Python: python/python.md
