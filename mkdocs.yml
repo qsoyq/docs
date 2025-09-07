@@ -117,6 +117,8 @@ nav:
                 - iOS Safari 如何唤醒App: note/safariOpenApp.md
                 - 中国移动小技巧: note/cmcc.md
                 - PerplexityPro: note/daily/perplexity.md
+                - Apple 快捷指令:
+                      - 创建 Github Issue: note/daily/shortcuts/create_github_issue.md
           - 服务部署:
                 - reality: Stash/reality.md
                 - trojan-go: Stash/trojan.md
