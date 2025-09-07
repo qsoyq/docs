@@ -117,6 +117,7 @@ nav:
                 - iOS Safari 如何唤醒App: note/safariOpenApp.md
                 - 中国移动小技巧: note/cmcc.md
                 - PerplexityPro: note/daily/perplexity.md
+                - 关于缓存的那些事: note/daily/cache.md
                 - Apple 快捷指令:
                       - 创建 Github Issue: note/daily/shortcuts/create_github_issue.md
           - 服务部署:
@@ -127,7 +128,8 @@ nav:
                 - 抖音:
                       - 用户: note/rsshub/douyin/user.md
           - VSCode:
-                - MarkdwonTable插件使用: note/vscode-markdown-table.md
+                - VSCode 使用手册: note/vscode/basic.md
+                - MarkdwonTable插件使用: note/vscode/markdown-table.md
           - MySQL:
                 - 关于 MySQL: note/mysql/mysql.md
                 - MySQL 外键约束: note/mysql/mysql_foreign_key_constraints.md
