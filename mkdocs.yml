@@ -119,6 +119,7 @@ nav:
                 - 中国移动小技巧: note/cmcc.md
                 - PerplexityPro: note/daily/perplexity.md
                 - 关于缓存的那些事: note/daily/cache.md
+                - NGA 移除外链警告: note/daily/remove_nga_url_alert.md
                 - Apple 快捷指令:
                       - 创建 Github Issue: note/daily/shortcuts/create_github_issue.md
           - 服务部署:
