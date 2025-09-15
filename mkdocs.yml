@@ -94,6 +94,7 @@ nav:
                 - FastAPI:
                       - 关于FastAPI: python/fastapi/fastapi.md
                       - Headers是如何处理的: python/fastapi/headers.md
+                      - 中间件使用示例: python/fastapi/middlewares.md
           - 编码:
                 - pep: python/pep.md
 
