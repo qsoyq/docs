@@ -84,11 +84,13 @@ def hello():
 
 ```
 
-[参考示例](https://github.com/qsoyq/pytoolkit/blob/main/examples/mermaid_with_fastapi_openapi/main.py)
-
 </details>
 
+[参考示例](https://github.com/qsoyq/pytoolkit/blob/main/examples/mermaid_with_fastapi_openapi/main.py)
+
 ## 回顾
+
+### 对于模块函数的覆写
 
 `fastapi.applications`模块通过 `from import` 语法导入并使用相应的函数对象, 所以需要通过 `imp.reload(fastapi.applications)`重载模块.
 
