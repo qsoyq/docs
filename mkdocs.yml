@@ -136,7 +136,9 @@ nav:
                 - MarkdwonTable插件使用: note/vscode/markdown-table.md
           - MySQL:
                 - 关于 MySQL: note/mysql/mysql.md
-                - MySQL 外键约束: note/mysql/mysql_foreign_key_constraints.md
+                - 事务隔离机制: note/mysql/lock.md
+                - CRUD: note/mysql/crud.md
+                - 外键约束: note/mysql/mysql_foreign_key_constraints.md
           - Docker:
                 - Docker Swam 使用体验: note/docker-swarm.md
           - Traefik:

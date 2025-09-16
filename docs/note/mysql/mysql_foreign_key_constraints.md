@@ -1,4 +1,4 @@
-# Mysql Foreign Key Constraints
+# 外键约束
 
 [create-table-foreign-keys](https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html)
 
