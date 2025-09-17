@@ -1,5 +1,23 @@
 # 路由函数
 
+## 路由实现
+
+`starlette.routing.compile_path` 实现路由编译
+
+```python
+def compile_path(
+    path: str,
+) -> typing.Tuple[typing.Pattern, str, typing.Dict[str, Convertor]]:
+    """
+    Given a path string, like: "/{username:str}", return a three-tuple
+    of (regex, format, {param_name:convertor}).
+
+    regex:      "/(?P<username>[^/]+)"
+    format:     "/{username}"
+    convertors: {"username": StringConvertor()}
+    """
+```
+
 ## 函数注释
 
 让函数文档注释的一部分出现在 openapi 的文档说明中，而不是全部。
@@ -87,6 +105,8 @@ if __name__ == "__main__":
 ```
 
 如代码所示，其中 v1 在文档中会看见不符合预期的内容
+
+### 函数注释分段失效的原因
 
 ```python
 import inspect
