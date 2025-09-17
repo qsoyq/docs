@@ -91,6 +91,7 @@ nav:
                 - gRPC: python/grpc.md
                 - typer: python/typer.md
                 - sentry: python/sentry.md
+                - PyYAML: python/pyyaml.md
                 - FastAPI:
                       - 关于FastAPI: python/fastapi/fastapi.md
                       - Headers是如何处理的: python/fastapi/headers.md
