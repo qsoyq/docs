@@ -95,6 +95,7 @@ nav:
                 - pydantic: python/pydantic.md
                 - FastAPI:
                       - 关于FastAPI: python/fastapi/fastapi.md
+                      - 使用手册: python/fastapi/usage.md
                       - 路由函数: python/fastapi/route.md
                       - Headers是如何处理的: python/fastapi/headers.md
                       - 中间件使用示例: python/fastapi/middlewares.md
