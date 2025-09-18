@@ -2,6 +2,133 @@
 
 ## 路由实现
 
+## 路由匹配
+
+1. 首轮匹配
+2. 次轮匹配
+3. not_found
+
+### 首轮匹配
+
+`starlette.routing.Router.app` 内触发路由匹配，根据匹配结果分为 `FULL`和`PARTIAL`
+
+对于第一个全匹配的路由，则直接进入处理流程
+
+遍历完路由后，如果没有全匹配的路由，则进入对一个部分匹配的路由函数
+
+<details>
+
+<summary>查看代码</summary>
+
+```python
+for route in self.routes:
+    # Determine if any route matches the incoming scope,
+    # and hand over to the matching route if found.
+    match, child_scope = route.matches(scope)
+    if match == Match.FULL:
+        scope.update(child_scope)
+        await route.handle(scope, receive, send)
+        return
+    elif match == Match.PARTIAL and partial is None:
+        partial = route
+        partial_scope = child_scope
+```
+
+</details>
+
+### 次轮匹配
+
+如果在首轮遍历未能找到全匹配或部分匹配的路由函数, 则会根据设置，添加或移除尾斜杠`/`再进行第二轮匹配
+
+次轮匹配对于第一个有效的匹配结果, 无论是完全匹配还是部分匹配, 都会以此返回重定向响应结果
+
+<details>
+
+<summary>查看代码</summary>
+
+```python
+route_path = get_route_path(scope)
+if scope["type"] == "http" and self.redirect_slashes and route_path != "/":
+    redirect_scope = dict(scope)
+    if route_path.endswith("/"):
+        redirect_scope["path"] = redirect_scope["path"].rstrip("/")
+    else:
+        redirect_scope["path"] = redirect_scope["path"] + "/"
+
+    for route in self.routes:
+        match, child_scope = route.matches(redirect_scope)
+        if match != Match.NONE:
+            redirect_url = URL(scope=redirect_scope)
+            response = RedirectResponse(url=str(redirect_url))
+            await response(scope, receive, send)
+            return
+
+await self.default(scope, receive, send)
+```
+
+</details>
+
+### 匹配失败
+
+对于两轮匹配失败后，进入`not_found`
+
+返回 404
+
+<details>
+
+<summary>查看代码</summary>
+
+```python
+async def not_found(self, scope: Scope, receive: Receive, send: Send) -> None:
+    if scope["type"] == "websocket":
+        websocket_close = WebSocketClose()
+        await websocket_close(scope, receive, send)
+        return
+
+    # If we're running inside a starlette application then raise an
+    # exception, so that the configurable exception handler can deal with
+    # returning the response. For plain ASGI apps, just return the response.
+    if "app" in scope:
+        raise HTTPException(status_code=404)
+    else:
+        response = PlainTextResponse("Not Found", status_code=404)
+    await response(scope, receive, send)
+```
+
+</details>
+
+### 路由匹配具体原理
+
+匹配的具体行为由 `starlette.routing.Route.matches` 进行
+
+<details>
+
+<summary>查看代码</summary>
+
+```python
+def matches(self, scope: Scope) -> tuple[Match, Scope]:
+    path_params: dict[str, Any]
+    if scope["type"] == "http":
+        route_path = get_route_path(scope)
+        match = self.path_regex.match(route_path)
+        if match:
+            matched_params = match.groupdict()
+            for key, value in matched_params.items():
+                matched_params[key] = self.param_convertors[key].convert(value)
+            path_params = dict(scope.get("path_params", {}))
+            path_params.update(matched_params)
+            child_scope = {"endpoint": self.endpoint, "path_params": path_params}
+            if self.methods and scope["method"] not in self.methods:
+                return Match.PARTIAL, child_scope
+            else:
+                return Match.FULL, child_scope
+    return Match.NONE, {}
+```
+
+</details>
+
+## 编译
+
 `starlette.routing.compile_path` 实现路由编译
 
 ```python
@@ -133,3 +260,7 @@ assert "\f" not in inspect.cleandoc(doc)
 ```python
 self.description = description or inspect.cleandoc(self.endpoint.__doc__.split("\f")[0]).strip() if self.endpoint.__doc__ else "" 
 ```
+
+## 回顾
+
+1. 路由根据添加顺序存储在列表，匹配时在第一个全匹配路由函数停止，否则会遍历.
