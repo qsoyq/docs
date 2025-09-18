@@ -2,13 +2,31 @@
 
 ## 路由实现
 
-## 路由匹配
+### 编译
+
+`starlette.routing.compile_path` 实现路由编译
+
+```python
+def compile_path(
+    path: str,
+) -> typing.Tuple[typing.Pattern, str, typing.Dict[str, Convertor]]:
+    """
+    Given a path string, like: "/{username:str}", return a three-tuple
+    of (regex, format, {param_name:convertor}).
+
+    regex:      "/(?P<username>[^/]+)"
+    format:     "/{username}"
+    convertors: {"username": StringConvertor()}
+    """
+```
+
+### 匹配
 
 1. 首轮匹配
 2. 次轮匹配
 3. not_found
 
-### 首轮匹配
+#### 首轮匹配
 
 `starlette.routing.Router.app` 内触发路由匹配，根据匹配结果分为 `FULL`和`PARTIAL`
 
@@ -36,7 +54,7 @@ for route in self.routes:
 
 </details>
 
-### 次轮匹配
+#### 次轮匹配
 
 如果在首轮遍历未能找到全匹配或部分匹配的路由函数, 则会根据设置，添加或移除尾斜杠`/`再进行第二轮匹配
 
@@ -68,7 +86,7 @@ await self.default(scope, receive, send)
 
 </details>
 
-### 匹配失败
+#### 匹配失败
 
 对于两轮匹配失败后，进入`not_found`
 
@@ -97,7 +115,7 @@ async def not_found(self, scope: Scope, receive: Receive, send: Send) -> None:
 
 </details>
 
-### 路由匹配具体原理
+#### 匹配规则
 
 匹配的具体行为由 `starlette.routing.Route.matches` 进行
 
@@ -126,24 +144,6 @@ def matches(self, scope: Scope) -> tuple[Match, Scope]:
 ```
 
 </details>
-
-## 编译
-
-`starlette.routing.compile_path` 实现路由编译
-
-```python
-def compile_path(
-    path: str,
-) -> typing.Tuple[typing.Pattern, str, typing.Dict[str, Convertor]]:
-    """
-    Given a path string, like: "/{username:str}", return a three-tuple
-    of (regex, format, {param_name:convertor}).
-
-    regex:      "/(?P<username>[^/]+)"
-    format:     "/{username}"
-    convertors: {"username": StringConvertor()}
-    """
-```
 
 ## 函数注释
 
