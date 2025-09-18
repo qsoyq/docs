@@ -26,6 +26,7 @@ Send = Callable[[Message], Awaitable[None]]
                 1. fastapi.startup
                 2. fastapi.shutdown
             2. route match
+            3. default(not_found)
 
 ### build_middleware_stack
 
