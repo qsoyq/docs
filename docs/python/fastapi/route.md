@@ -282,6 +282,61 @@ async def not_found(self, scope: Scope, receive: Receive, send: Send) -> None:
 
 </details>
 
+### 路由函数预处理
+
+#### 完全匹配与部分匹配的区别
+
+在路由匹配规则里，根据路由函数是否允许当前请求的方法，分为 `Match.FULL` 和 `Match.PARTIAL`
+
+实际上，这两种情况在处理上没有实际的区别。
+
+`Match.PARTIAL` 是 `Match.FULL` 没有成功的一种回退，最终都会在`Route.handle` 里对方法再次判断，返回 405 响应
+
+<details>
+
+<summary>查看代码</summary>
+
+```python
+# starlette.routing.Router.app
+for route in self.routes:
+    # Determine if any route matches the incoming scope,
+    # and hand over to the matching route if found.
+    match, child_scope = route.matches(scope)
+    if match == Match.FULL:
+        scope.update(child_scope)
+        await route.handle(scope, receive, send)
+        return
+    elif match == Match.PARTIAL and partial is None:
+        partial = route
+        partial_scope = child_scope
+
+if partial is not None:
+    #  Handle partial matches. These are cases where an endpoint is
+    # able to handle the request, but is not a preferred option.
+    # We use this in particular to deal with "405 Method Not Allowed".
+    scope.update(partial_scope)
+    await partial.handle(scope, receive, send)
+    return
+```
+
+```python
+# starlette.routing.Route.handle
+async def handle(self, scope: Scope, receive: Receive, send: Send) -> None:
+    if self.methods and scope["method"] not in self.methods:
+        headers = {"Allow": ", ".join(self.methods)}
+        if "app" in scope:
+            raise HTTPException(status_code=405, headers=headers)
+        else:
+            response = PlainTextResponse(
+                "Method Not Allowed", status_code=405, headers=headers
+            )
+        await response(scope, receive, send)
+    else:
+        await self.app(scope, receive, send)
+```
+
+</details>
+
 ## 函数注释
 
 让函数文档注释的一部分出现在 openapi 的文档说明中，而不是全部。
