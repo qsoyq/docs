@@ -179,6 +179,7 @@ nav:
                 - macos: tools/macos.md
                 - linux: tools/linux.md
                 - docker: tools/docker.md
+                - git使用手册: tools/git.md
 
           - Protocol:
                 - Network: protocol/network.md
