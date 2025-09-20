@@ -49,3 +49,7 @@ return {
 一开始的想法是直接通过代理 Mitm 目标请求传递 `Cookie`, 后来发现会导致请求失败。
 
 未找到在 RSSHub 里如何传递 `cookie` 参数, 于是打算自己实现一个 API 来处理
+
+---
+
+经测试， 只需携带 `sessionid_ss` 这个 Cookie 即可
