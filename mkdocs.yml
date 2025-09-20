@@ -80,11 +80,11 @@ nav:
 
     - Python:
           - Python: python/python.md
-          - 彩色化日志: note/color-log.md
           - 标准库:
                 - 多线程: python/threading.md
                 - 性能分析: python/profile.md
                 - 正则表达式: python/regex.md
+                - 日志: python/logging.md
           - 三方库:
                 - httpx: python/httpx.md
                 - sqlalchemy: python/sqlalchemy.md
