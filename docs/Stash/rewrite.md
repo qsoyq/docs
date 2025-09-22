@@ -107,3 +107,18 @@ http:
 ---
 
 经测试， 只需携带 `sessionid_ss` 这个 Cookie 即可
+
+---
+
+线上接口已不支持通过`query` 或 `header` 参数传递 `cookie`
+
+#### 只使用 URL 重写
+
+思路同上，但是通过 URL 重写，将请求改写到一个支持通过`路径参数`传递 cookie 的新[API](https://p.19940731.xyz/redoc#tag/RSS/operation/user_with_cookie_api_rss_douyin_user__username___sessionid_ss__get)
+
+```yaml
+http:
+    mitm: rsshub.19940731.xyz
+    url-rewrite:
+        - https?://rsshub.19940731.xyz/douyin/user/(.*) http://p.docker.localhost/api/rss/douyin/user/$1/xxxxxxxxxxxxxxxxxxxxx transparent
+```
