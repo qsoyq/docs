@@ -16,6 +16,10 @@ git update-index --assume-unchanged <filename>
 git update-index --no-assume-unchanged <filename>
 ```
 
+#### 注意点
+
+1. 使用`git checkout` 会导致对临时忽略文件的修改也被还原
+
 ### 设置
 
 自动关联远程分支
