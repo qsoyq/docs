@@ -86,7 +86,7 @@ nav:
                 - threading: python/threading.md
                 - profile: python/profile.md
                 - re: python/regex.md
-                
+
           - 三方库:
                 - httpx: python/httpx.md
                 - sqlalchemy: python/sqlalchemy.md
@@ -104,6 +104,7 @@ nav:
                       - Headers是如何处理的: python/fastapi/headers.md
                       - 中间件使用示例: python/fastapi/middlewares.md
                       - 在FastAPI中支持mermaid图表: python/fastapi/mermaid.md
+                      - 关于FastAPI的响应类: python/fastapi/response.md
           - 编码:
                 - pep: python/pep.md
 
