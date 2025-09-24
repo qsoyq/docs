@@ -45,6 +45,12 @@ def add_mermaid_support(func: Callable[..., HTMLResponse]):
       mermaid.initialize({ startOnLoad: true });
     </script>
 
+    <style type="text/css">
+        pre.mermaid {
+            background-color: lightsteelblue !important;
+        }
+    </style>    
+
     '''
 
     @wraps(func)
@@ -95,3 +101,31 @@ def hello():
 `fastapi.applications`模块通过 `from import` 语法导入并使用相应的函数对象, 所以需要通过 `imp.reload(fastapi.applications)`重载模块.
 
 或者直接修改 `fastapi.applications.get_swagger_ui_html` 和 `fastapi.applications.get_redoc_html` 函数对象.
+
+### 关于样式
+
+如代码所示，使用`pre`标签展示流程图.
+
+而 `Redoc` 的默认样式会导致mermaid 图表的背景色为黑色，不利于阅读，所以需要添加一个样式并通过`!important` 提高优先级。
+
+<details>
+
+<summary>查看代码示例</summary>
+
+原有的样式
+
+```css
+.hzUya pre {
+    background-color: rgb(17, 23, 26);
+}
+```
+
+添加的样式
+
+```css
+pre.mermaid {
+    background-color: lightsteelblue !important;
+}
+```
+
+</details>
