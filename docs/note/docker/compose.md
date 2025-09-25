@@ -26,8 +26,8 @@ flowchart TB
     B1 --> |YES| A7
     A7 --> A5
     B1 --> |NO| B2{是否达到最大重试次数}
-    B2 --> |YES| B3[重启容器]
-    B3 --> A
+    B2 --> |YES| B3[将服务标记为不健康]
+    B3 --> A5
     B2 --> |NO| A5
 ```
 </details>
