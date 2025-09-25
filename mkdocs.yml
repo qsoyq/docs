@@ -150,7 +150,9 @@ nav:
                 - CRUD: note/mysql/crud.md
                 - 外键约束: note/mysql/mysql_foreign_key_constraints.md
           - Docker:
-                - Docker Swam 使用体验: note/docker-swarm.md
+                - Docker: note/docker/docker.md
+                - Docker Swam 使用体验: note/docker/docker-swarm.md
+                - Docker Compose: note/docker/compose.md
           - Traefik:
                 - note/traefik/部署.md
                 - plugin: note/traefik/plugin.md
@@ -181,7 +183,6 @@ nav:
                 - trojan: tools/trojan.md
                 - macos: tools/macos.md
                 - linux: tools/linux.md
-                - docker: tools/docker.md
                 - git使用手册: tools/git.md
 
           - Protocol:
