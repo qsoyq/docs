@@ -77,6 +77,7 @@ nav:
           - StashLink配置: Stash/stashlink.md
           #   - Stash/snellv3.md
           - Stash API: Stash/api.md
+          - 网络分流流程: Stash/network.md
 
     - Python:
           - Python: python/python.md
@@ -133,6 +134,7 @@ nav:
                 - 关于缓存的那些事: note/daily/cache.md
                 - NGA 移除外链警告: note/daily/remove_nga_url_alert.md
                 - 时序数据库的特点: note/daily/tsdb.md
+                - 谷歌云试用: note/daily/gcp.md
                 - Apple 快捷指令:
                       - 创建 Github Issue: note/daily/shortcuts/create_github_issue.md
           - 服务部署:
