@@ -51,10 +51,14 @@ assert re.match(r"hostdzire", text, re.I)
 
 </details>
 
-## 在正则表达式中忽略大小写
+## 一些特殊的匹配规则
 
-- 使用 `re.I`
-- 在匹配模式前缀使用`(?i)`
+- `(?=)` 前瞻
+- `(?!)` 否定前瞻
+- `(?<=)` 后顾
+- `(?<!)` 否定后顾
+
+需要注意的是, 后顾模式仅匹配当前位置前面的字符，本身不消耗字符
 
 <details>
 
@@ -62,7 +66,42 @@ assert re.match(r"hostdzire", text, re.I)
 
 ```python
 import re
-assert re.escape("a.b*c+") == r"a\.b\*c\+"
+
+# 前瞻
+
+r = re.match(r"hello(?=,world)", "hello,world")
+assert r and r.group() == "hello"
+
+# 否定前瞻
+
+r = re.match(r"hello(?!,world)", "hello,world")
+assert r is None
+
+r = re.match(r"hello(?!，world)", "hello,world")
+assert r and r.group() == "hello"
+
+# 后顾
+
+r = re.match(r"hello,(?<=,)world", "hello,world")
+assert r and r.group() == "hello,world"
+
+r = re.match(r".*(?<=hello,)world", "hello,world")
+assert r and r.group() == "hello,world"
+
+# 否定后顾
+
+r = re.match(r"hello,(?<!,)world", "hello,world")
+assert r is None
+
+r = re.match(r"hello，(?<!,)world", "hello，world")
+assert r and r.group() == "hello，world"
+
+r = re.match(r".*(?<!hello,)world", "hello,world")
+assert r is None
+
+r = re.match(r".*(?<!hello，)world", "hello,world")
+assert r and r.group() == "hello,world"
+
 ```
 
 </details>

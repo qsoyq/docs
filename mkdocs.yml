@@ -96,6 +96,7 @@ nav:
                 - PyYAML: python/pyyaml.md
                 - pydantic: python/pydantic.md
                 - pywright: python/playwright.md
+                - pretty_errors: python/pretty_errors.md
                 - FastAPI:
                       - 关于FastAPI: python/fastapi/fastapi.md
                       - 使用手册: python/fastapi/usage.md
