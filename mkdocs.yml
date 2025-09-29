@@ -78,6 +78,7 @@ nav:
           #   - Stash/snellv3.md
           - Stash API: Stash/api.md
           - 网络分流流程: Stash/network.md
+          - Stash 下使用中兴F50: Stash/f50.md
 
     - Python:
           - Python: python/python.md
