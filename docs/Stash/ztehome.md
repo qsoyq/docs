@@ -12,7 +12,7 @@ Stash对于局域网内的服务发现处理似乎存在问题?
 [DPC] invalid udp packet: malformed ip: 239.255.255.250
 ```
 
-`所以需要通过兼容模式或者跳过路由的方式，让这些组播 ip 跳过`Stash Tunnel`
+所以需要通过兼容模式或者跳过路由的方式，让这些组播 ip 跳过 `Stash Tunnel`
 
 ## 解决方案
 
