@@ -1,41 +1,37 @@
-# stashlink
+# StashLink
 
-配置示例
+1. 在配置文件中添加`stashlink`字段
+2. 添加一个`stashlink`类型的代理
+3. 添加规则, 分流到上一步添加的代理
 
+<details>
+<summary>查看 Reality 配置示例</summary>
 ```yaml
-name: StashLinkClaw
-category: StashLink
-icon: https://raw.githubusercontent.com/qsoyq/shell/main/assets/icon/debug.png
-
-proxy-groups:
-    - name: StashLink
-      icon: "https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/select.png"
-      type: select
-      proxies:
-          - DIRECT
-          - MacbookPro
-
-      lazy: true
-      ssid-policy:
-          cellular: MacbookPro
-          default: DIRECT
-
 stashlink:
     underlying-proxy:
-        # snell
-        name: ""
-        type: snell
-        server: ""
-        port: ""
-        psk: ""
-        udp: true # 需要 v3 以上服务端
-        version: 3
-        obfs-opts:
-            mode: tls
-            host: bing.com
+        name: reality
+        type: vless
+        flow: xtls-rprx-vision
+        udp: true
+        tls: true
+        server: 1.1.1.1
+        port: 443
+        uuid: xxxxxxxxxxxxxxx
+        servername: www.amazon.com
+        fingerprint: chrome # 可选
+        reality-opts:
+            public-key: xxxxxxxxxxxxxxxx
+            short-id: xx
+        benchmark-url: http://cp.cloudflare.com/
+        benchmark-timeout: 1
 
 proxies:
-    - name: MacbookPro
+    - name: StashLink｜Macbook
       type: stashlink
-      device-id: ""
+      device-id: xxxxxxxxxxxxxxxxxx
+
+rules:
+    - IP-CIDR,192.168.0.1/24,StashLink｜Macbook,no-resolve
+
 ```
+</details>
