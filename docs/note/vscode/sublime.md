@@ -59,6 +59,9 @@ pycharm 作为老牌 IDE, 用来做 python 开发是不会有什么问题的.
 
 ## 自定义配置
 
+<details>
+<summary>查看代码示例</summary>
+
 ```json
 {
     "workbench.colorTheme": "Dainty – Monokai",
@@ -126,3 +129,5 @@ pycharm 作为老牌 IDE, 用来做 python 开发是不会有什么问题的.
 
 }
 ```
+
+</details>

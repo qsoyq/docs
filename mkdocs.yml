@@ -118,6 +118,10 @@ nav:
           - 开发工具:
                 - poetry: python/poetry.md
 
+    - Go:
+          - 三方库:
+                - v2fly/geosite: golang/v2fly/domain-list-community.md
+
     - Service:
           - RSS: service/rss.md
           - iCalendar: service/calendar.md
@@ -152,6 +156,7 @@ nav:
           - VSCode:
                 - VSCode 使用手册: note/vscode/basic.md
                 - MarkdwonTable插件使用: note/vscode/markdown-table.md
+                - 为什么从 Sublime 迁移到 VSCode: note/vscode/sublime.md
           - MySQL:
                 - 关于 MySQL: note/mysql/mysql.md
                 - 事务隔离机制: note/mysql/lock.md
@@ -186,7 +191,6 @@ nav:
                 - traefik: tools/traefik.md
                 - dev-tool: tools/dev-tool.md
                 - frp: tools/frp.md
-                - vscode: tools/vscode.md
                 - cloudflared: tools/cloudflared.md
                 - trojan: tools/trojan.md
                 - macos: tools/macos.md
