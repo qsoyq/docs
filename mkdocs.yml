@@ -144,6 +144,7 @@ nav:
                 - 时序数据库的特点: note/daily/tsdb.md
                 - 谷歌云试用: note/daily/gcp.md
                 - 国行 Mac 显示台湾 emoji 🇹🇼: note/daily/display_taiwan_emoji_on_cn_mac.md
+                - Nodeseek网站分析: note/daily/nodeseek.md
                 - Apple 快捷指令:
                       - 创建 Github Issue: note/daily/shortcuts/create_github_issue.md
           - 服务部署:
