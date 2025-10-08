@@ -84,6 +84,8 @@ nav:
 
     - Python:
           - Python: python/python.md
+          - 版本更新:
+                - What’s New In Python 3.10: python/versions/310.md
           - 标准库:
                 - logging: python/logging.md
                 - dataclasses: python/dataclasses.md
