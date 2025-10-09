@@ -97,6 +97,7 @@ nav:
                 - threading: python/threading.md
                 - profile: python/profile.md
                 - re: python/regex.md
+                - functools: python/functools.md
 
           - 三方库:
                 - httpx: python/httpx.md
