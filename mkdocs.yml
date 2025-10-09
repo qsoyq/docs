@@ -72,6 +72,7 @@ nav:
     - Stash:
           - 覆写: Stash/stoverride.md
           - HTTP重写: Stash/rewrite.md
+          - 协议类型: Stash/proxies.md
           - 常见问题: Stash/faq.md
           #   - Stash/iperf3.md
           - StashLink配置: Stash/stashlink.md
