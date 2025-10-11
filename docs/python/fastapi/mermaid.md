@@ -22,7 +22,7 @@ FastAPI 在指定请求中返回`redoc`/`docs`两种风格的的`OpenAPI`前端�
 <summary>点击查看代码示例</summary>
 
 ```python
-import imp
+import importlib
 from functools import wraps
 from typing import Callable
 
@@ -68,7 +68,7 @@ def add_mermaid_support(func: Callable[..., HTMLResponse]):
 # A
 fastapi.openapi.docs.get_swagger_ui_html = add_mermaid_support(fastapi.openapi.docs.get_swagger_ui_html)
 fastapi.openapi.docs.get_redoc_html = add_mermaid_support(fastapi.openapi.docs.get_redoc_html)
-imp.reload(fastapi.applications)
+importlib.reload(fastapi.applications)
 
 # B
 # fastapi.applications.get_swagger_ui_html = add_mermaid_support(fastapi.openapi.docs.get_swagger_ui_html)
