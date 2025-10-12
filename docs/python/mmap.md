@@ -11,6 +11,9 @@ mmap 通过利用操作系统的虚拟内存映射机制，将磁盘的文件映
 
 ## 映射文件到内存进行读写操作
 
+<details>
+<summary>Example</summary>
+
 ```python
 import mmap
 
@@ -22,3 +25,5 @@ with open("./example.dat", "r+b") as f:
     mm.close()
 
 ```
+
+</details>
