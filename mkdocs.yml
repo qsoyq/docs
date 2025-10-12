@@ -92,11 +92,12 @@ nav:
                 - What’s New In Python 3.13: python/versions/313.md
                 - What’s New In Python 3.14: python/versions/314.md
           - 标准库:
+                - re: python/regex.md
+                - mmap: python/mmap.md
                 - logging: python/logging.md
                 - dataclasses: python/dataclasses.md
                 - threading: python/threading.md
                 - profile: python/profile.md
-                - re: python/regex.md
                 - functools: python/functools.md
                 - itertools: python/itertools.md
 
