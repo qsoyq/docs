@@ -113,6 +113,8 @@ nav:
                 - proto-plus: python/proto-plus.md
                 - pydantic:
                       - model: python/pydantic/model.md
+                      - migration: python/pydantic/migration.md
+                      - serialization: python/pydantic/serialization.md
                 - FastAPI:
                       - 关于FastAPI: python/fastapi/fastapi.md
                       - 使用手册: python/fastapi/usage.md
