@@ -25,3 +25,9 @@
 4. 在 `dns` 输入框里输入需要的 dns 服务器, 比如`system`、`1.0.0.1`、`https://223.6.6.6/dns-query`
 5. 点击`Execute`执行请求
 6. 在 `Request URL` 中复制 `URL`, 然后在 Stash 里导入覆写即可
+
+#### 国内网站走国内DNS
+
+- <https://p.19940731.xyz/api/stash/stoverride/geosite/nameserver-policy/cn?dns=223.6.6.6>
+
+使用上面的覆写让 `geosite,cn` 相关域名 dns 解析走`223.6.6.6`
