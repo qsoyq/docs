@@ -1,6 +1,6 @@
-# Pydantic
+# migration
 
-## 版本迁移 v2
+## 迁移 v2
 
 ### HttpUrl
 

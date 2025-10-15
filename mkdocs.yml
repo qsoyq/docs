@@ -108,10 +108,11 @@ nav:
                 - typer: python/typer.md
                 - sentry: python/sentry.md
                 - PyYAML: python/pyyaml.md
-                - pydantic: python/pydantic.md
                 - pywright: python/playwright.md
                 - pretty_errors: python/pretty_errors.md
                 - proto-plus: python/proto-plus.md
+                - pydantic:
+                      - model: python/pydantic/model.md
                 - FastAPI:
                       - 关于FastAPI: python/fastapi/fastapi.md
                       - 使用手册: python/fastapi/usage.md
