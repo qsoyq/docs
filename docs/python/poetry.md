@@ -14,3 +14,14 @@
 rm -r ~/Library/Caches/pypoetry/cache
 rm -r ~/Library/Caches/pypoetry/artifacts
 ```
+
+### not supporting PEP 517 builds
+
+```
+- not supporting PEP 517 builds
+- not specifying PEP 517 build requirements correctly
+- the build requirements are incompatible with your operating system or Python version
+- the build requirements are missing system dependencies (eg: compilers, libraries, headers).
+```
+
+更新/回退依赖版本

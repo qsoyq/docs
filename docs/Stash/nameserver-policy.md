@@ -5,7 +5,7 @@
 已知 Stash 不支持在`nameserver-policy`中使用`geosite`的语法。
 
 如果通过 `API` 动态生成对应的覆写, 以添加覆写的方式, 导入相应的`nameserver-policy`, 便可以达成该目的。
-
+$$
 ### 缺点
 
 1. 首次导入需要添加多个对应`geosite`的覆写, 操作可能有点繁琐?
