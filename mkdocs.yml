@@ -130,6 +130,7 @@ nav:
 
                 - wtfpython: python/wtfpython.md
           - 开发工具:
+                - uv: python/uv.md
                 - poetry: python/poetry.md
 
     - Go:
