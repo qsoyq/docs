@@ -163,6 +163,7 @@ nav:
                 - IKOS W3800苹果皮: note/daily/w3800.md
                 - Apple 快捷指令:
                       - 创建 Github Issue: note/daily/shortcuts/create_github_issue.md
+                      - iOS 自动化转发短信到Telegram: note/daily/shortcuts/sms_forward_to_tg.md
           - 服务部署:
                 - reality: Stash/reality.md
                 - trojan-go: Stash/trojan.md
