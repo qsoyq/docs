@@ -2,6 +2,28 @@
 
 - [API 文档](https://docs.github.com/en/rest/releases/releases)
 
+## 通过密钥访问
+
+1. 创建密钥
+
+    ```bash
+    # cd ~/.ssh
+    ssh-keygen -t ed25519 -C "email@example.com"
+    ```
+
+2. 在后台中添加密钥
+3. 在配置文件指定地址使用特定的密钥
+
+    ~/.ssh/config
+
+    ```bash
+    Host example.org
+    HostName example.org
+    Port 443
+    User git
+    IdentityFile ~/.ssh/example
+    ```
+
 ## gh
 
 ### Notifications
