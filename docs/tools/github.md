@@ -2,6 +2,14 @@
 
 - [API 文档](https://docs.github.com/en/rest/releases/releases)
 
+## Sub Module
+
+同步子模块
+
+```bash
+git submodule update --init --recursive
+```
+
 ## 通过密钥访问
 
 1. 创建密钥
