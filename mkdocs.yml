@@ -145,14 +145,14 @@ nav:
 
     - Notes:
           - Note: note/note.md
-          - Why: note/why.md
-          - Bug: bug.md
-          - 摸鱼网站: mofish.md
+
           - 日常:
-                - HTTP 客户端实现思路: note/http-client.md
-                - HTTP RPC Client 封装思考: note/http-rpc-client.md
-                - iOS Safari 如何唤醒App: note/safariOpenApp.md
-                - 中国移动小技巧: note/cmcc.md
+                - 摸鱼网站: note/daily/mofish.md
+                - 一些没想明白的事: note/daily/why.md
+                - HTTP 客户端实现思路: note/daily/http-client.md
+                - HTTP RPC Client 封装思考: note/daily/http-rpc-client.md
+                - iOS Safari 如何唤醒App: note/daily/safariOpenApp.md
+                - 中国移动小技巧: note/daily/cmcc.md
                 - PerplexityPro: note/daily/perplexity.md
                 - 关于缓存的那些事: note/daily/cache.md
                 - NGA 移除外链警告: note/daily/remove_nga_url_alert.md
@@ -161,20 +161,22 @@ nav:
                 - 国行 Mac 显示台湾 emoji 🇹🇼: note/daily/display_taiwan_emoji_on_cn_mac.md
                 - Nodeseek网站分析: note/daily/nodeseek.md
                 - IKOS W3800苹果皮: note/daily/w3800.md
-                - Apple 快捷指令:
-                      - 创建 Github Issue: note/daily/shortcuts/create_github_issue.md
-                      - iOS 自动化转发短信到Telegram: note/daily/shortcuts/sms_forward_to_tg.md
+                - Cloudflare Tunnel内网穿透方案: note/daily/cloudflare_tunnel.md
+                - RSShub:
+                      - 抖音:
+                            - 用户: note/daily/rsshub/douyin/user.md
+                - VSCode:
+                      - VSCode 使用手册: note/daily/vscode/basic.md
+                      - MarkdwonTable插件使用: note/daily/vscode/markdown-table.md
+                      - 为什么从 Sublime 迁移到 VSCode: note/daily/vscode/sublime.md
+          - Apple 快捷指令:
+                - 创建 Github Issue: note/shortcuts/create_github_issue.md
+                - iOS 自动化转发短信到Telegram: note/shortcuts/sms_forward_to_tg.md
           - 服务部署:
                 - reality: Stash/reality.md
                 - trojan-go: Stash/trojan.md
                 - hysteria2: Stash/hysteria2.md
-          - RSShub:
-                - 抖音:
-                      - 用户: note/rsshub/douyin/user.md
-          - VSCode:
-                - VSCode 使用手册: note/vscode/basic.md
-                - MarkdwonTable插件使用: note/vscode/markdown-table.md
-                - 为什么从 Sublime 迁移到 VSCode: note/vscode/sublime.md
+
           - MySQL:
                 - 关于 MySQL: note/mysql/mysql.md
                 - 事务隔离机制: note/mysql/lock.md
@@ -185,10 +187,10 @@ nav:
                 - Docker Swam 使用体验: note/docker/docker-swarm.md
                 - Docker Compose: note/docker/compose.md
           - Traefik:
-                - note/traefik/部署.md
+                - note/traefik/deploy.md
                 - plugin: note/traefik/plugin.md
                 - middleware:
-                      - note/traefik-forwardauth-oauth-middleware.md
+                      - note/traefik/traefik-forwardauth-oauth-middleware.md
 
                 - 源码解读:
                       - note/traefik/source/index.md

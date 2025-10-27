@@ -1,4 +1,3 @@
-# Why
 
 ## Golang
 
@@ -57,3 +56,13 @@ E       OSError: [Errno 39] Destination address required
 ```
 
 在调用 `set_proxy` 后 `sendto`接口才恢复正常运作.
+
+## uptime-kuma
+
+### AxiosError: maxContentLength size of -1 exceeded
+
+uptime-kuma 前端使用了 axios, 频繁出现`maxContentLength size of -1 exceeded`的报错.
+
+[Check of running Websites results in error "maxContentLength size of -1 exceeded"](https://github.com/louislam/uptime-kuma/issues/2253)
+
+[AxiosError: maxContentLength size of -1 exceeded](https://github.com/axios/axios/issues/4806)
