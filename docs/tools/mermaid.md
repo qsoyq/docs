@@ -40,3 +40,18 @@ John-->>Alice: Great!
 John->>Bob: How about you?
 Bob-->>John: Jolly good!
 ```
+
+## 甘特图
+
+```mermaid
+gantt
+    title 项目进度图例
+    dateFormat YYYY-MM-DD
+    axisFormat %m-%d
+    section 需求分析
+    需求调研 :a1, 2025-10-01, 5d
+    需求确认 :a2, after a1, 3d
+    section 开发阶段
+    编码 :b1, 2025-10-10, 7d
+    测试 :b2, after b1, 4d
+```
