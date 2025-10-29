@@ -111,6 +111,7 @@ nav:
                 - pywright: python/playwright.md
                 - pretty_errors: python/pretty_errors.md
                 - proto-plus: python/proto-plus.md
+                - openai: python/openai.md
                 - pydantic:
                       - model: python/pydantic/model.md
                       - migration: python/pydantic/migration.md
