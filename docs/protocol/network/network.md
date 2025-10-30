@@ -122,6 +122,4 @@ TCP 通过滑动窗口, 并发发送多个分片.
 
 仅当最小序号的分片得到确认后, 窗口才会移动, 发送新的分片, 直到结束.
 
-#### TCP 连接
-
 ![](https://qsoyq-public.oss-cn-shanghai.aliyuncs.com/pic/obsidian/v1/895c23db387a4afa8488f9dcd8616e35.png)

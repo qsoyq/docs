@@ -219,8 +219,11 @@ nav:
                 - git使用手册: tools/git.md
 
           - Protocol:
-                - Network: protocol/network.md
-                - HTTP: protocol/http.md
                 - ASGI: protocol/asgi.md
                 - gRPC: protocol/grpc.md
                 - OAuth: protocol/oauth.md
+                - Network:
+                      - Network: protocol/network/network.md
+                      - TCP: protocol/network/tcp.md
+                      - TLS: protocol/network/tls.md
+                      - HTTP: protocol/network/http.md
