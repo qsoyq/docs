@@ -164,6 +164,7 @@ nav:
                 - Nodeseek网站分析: note/daily/nodeseek.md
                 - IKOS W3800苹果皮: note/daily/w3800.md
                 - Cloudflare Tunnel内网穿透方案: note/daily/cloudflare_tunnel.md
+                - 使用 mitmproxy 降级 http2: note/daily/disable-http2-by-mitmproxy.md
                 - RSShub:
                       - 抖音:
                             - 用户: note/daily/rsshub/douyin/user.md
