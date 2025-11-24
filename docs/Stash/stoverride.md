@@ -54,6 +54,7 @@
 | Telegram               | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/telegram.stoverride)             | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/telegram.stoverride)             |                                                     |
 | Imgur                  | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/imgur.stoverride)                | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/imgur.stoverride)                |                                                     |
 | 知乎                   | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/zhihu.stoverride)                | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/zhihu.stoverride)                |                                                     |
+| 麦当劳                 | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/mcd.stoverride)                  | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/mcd.stoverride)                  |                                                     |
 
 ---
 这部分待修复或待验证
@@ -65,7 +66,6 @@
 | 美团外卖 | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/waimai.meituan.stoverride) | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/waimai.meituan.stoverride) |      |
 | 盒马     | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/freshippo.stoverride)      | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/freshippo.stoverride)      |      |
 | 肯德基   | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/kfc.stoverride)            | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/kfc.stoverride)            |      |
-| 麦当劳   | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/mcd.stoverride)            | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/mcd.stoverride)            |      |
 | 下载狗   | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/xiazaitool.stoverride)     | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/xiazaitool.stoverride)     |      |
 | 饿了么   | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/eleme.stoverride)          | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/eleme.stoverride)          |      |
 | 中国移动 | [仓库地址](https://raw.githubusercontent.com/qsoyq/stash/main/override/ad/cmcc.stoverride)           | [安装地址](https://link.stash.ws/install-override/raw.githubusercontent.com/qsoyq/stash/main/override/ad/cmcc.stoverride)           |      |
