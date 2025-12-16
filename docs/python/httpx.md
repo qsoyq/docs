@@ -6,7 +6,9 @@ httpx 本身并没有实现 h1 和 h2 的协议, 而是在 `HTTPTransport` 里�
 
 httpx 的`Request` 、`Response`的结构是借鉴`requests`的,  在`httpx/_status_codes` 源码内甚至有对`requests`的兼容性处理.
 
-## WSGITransport 和 ASGITransport
+## 基于 httpx 的数据 mock
+
+### WSGITransport 和 ASGITransport
 
 httpx 设计了 BaseTransport 类来处理请求.
 
@@ -18,17 +20,18 @@ httpx 设计了 BaseTransport 类来处理请求.
 
 这个特性让我想到了可以用来实现数据的 mock.
 
-## 基于 httpx 的数据 mock
+### 如何处理注册事件
 
-#### 如何处理注册事件
-
-在以 FastApi作为框架写测试代码的时候, 遇到了一个问题, 就是本应在应用启动时的注册事件, 并没有执行.
+在以 `FastAPI` 作为框架写测试代码的时候, 遇到了一个问题, 就是本应在应用启动时的注册事件, 并没有执行.
 
 而路由处理函数是依赖这些注册事件的, 那么该如何启动 FastApi 的注册事件?
 
 通过阅读`uvicorn`的源码`uvicorn.lifespan.on.LifespanOn`发现, 协议服务器是通过将 `lifespan` 事件传递给`ASGI`,如`lifespan.startup`和`lifespan.shutdown`来管理 ASGI 对象的生命周期, 那么只要模拟这个行为就可以了.
 
-#### 代码示例
+### 代码示例
+
+<details>
+<summary>Example</summary>
 
 ```python
 import asyncio
@@ -68,6 +71,11 @@ if __name__ == "__main__":
     loop.run_until_complete(lifespan.shutdown())
 
 ```
+
+</details>
+
+<details>
+<summary>Example</summary>
 
 ```python
 import asyncio
@@ -155,3 +163,59 @@ class LifespanEvent:
         await self.app(scope, self.receive, self.send)
 
 ```
+
+</details>
+
+## 基于猴子补丁修改内部行为
+
+<details>
+<summary>关闭证书验证</summary>
+
+```python
+import asyncio
+from typing import Callable
+from functools import wraps
+
+import httpx
+
+
+class _PatchClient(httpx.Client):
+    def __init__(self, *args, **kwargs):
+        kwargs["verify"] = False
+        super().__init__(*args, **kwargs)
+
+
+class _PatchAsyncClient(httpx.AsyncClient):
+    def __init__(self, *args, **kwargs):
+        kwargs["verify"] = False
+        super().__init__(*args, **kwargs)
+
+
+def _patch_request(func: Callable):
+    @wraps(func)
+    def request(*args, **kwargs):
+        kwargs["verify"] = False
+        return func(*args, **kwargs)
+
+    return request
+
+
+def patch():
+    httpx._api.request = _patch_request(httpx._api.request)
+    httpx.Client = _PatchClient
+    httpx.AsyncClient = _PatchAsyncClient
+
+
+def main():
+    patch()
+    url = "https://httpbin.org/get"
+    httpx.get(url)
+    httpx.Client().get(url)
+    asyncio.run(httpx.AsyncClient().get(url))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+</details>
