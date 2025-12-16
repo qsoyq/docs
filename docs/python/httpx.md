@@ -219,3 +219,12 @@ if __name__ == "__main__":
 ```
 
 </details>
+
+### 使用 pth 文件注入插件
+
+- <https://github.com/qsoyq/httpx-disable-verify>
+
+```bash
+pip install git+https://github.com/qsoyq/httpx-disable-verify.git
+python -m httpx_disable_verify install
+```
