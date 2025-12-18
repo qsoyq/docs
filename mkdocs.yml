@@ -82,6 +82,7 @@ nav:
           - Stash 下使用中兴F50: Stash/f50.md
           - Stash 中兴智慧生活 App: Stash/ztehome.md
           - nameserver-policy: Stash/nameserver-policy.md
+          - 插件中心安装兼容 Stash: Stash/hub-rewrite-plugin.md
 
     - Python:
           - Python: python/python.md
