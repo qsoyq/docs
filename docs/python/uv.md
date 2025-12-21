@@ -2,7 +2,9 @@
 
 - <https://docs.astral.sh/uv/>
 
-## Versions
+## Offical
+
+### Versions
 
 - uv python install: Install Python versions.
 - uv python list: View available Python versions.
@@ -10,13 +12,13 @@
 - uv python pin: Pin the current project to use a specific Python version.
 - uv python uninstall: Uninstall a Python version.
 
-## Scripts
+### Scripts
 
 uv run: Run a script.
 uv add --script: Add a dependency to a script.
 uv remove --script: Remove a dependency from a script.
 
-## Project
+### Project
 
 uv init: Create a new Python project.
 uv add: Add a dependency to the project.
@@ -28,7 +30,7 @@ uv tree: View the dependency tree for the project.
 uv build: Build the project into distribution archives.
 uv publish: Publish the project to a package index.
 
-### dependency
+#### dependency
 
 ```bash
 uv add 'requests==2.31.0'
@@ -38,7 +40,7 @@ uv add -r requirements.txt -c constraints.txt
 uv lock --upgrade-package requests
 ```
 
-### pyproject.toml
+#### pyproject.toml
 
 ```toml
 [project]
@@ -53,7 +55,7 @@ dependencies = [
 
 ```
 
-## Tools
+### Tools
 
 Running and installing tools published to Python package indexes, e.g., ruff or black.
 
@@ -63,7 +65,7 @@ Running and installing tools published to Python package indexes, e.g., ruff or 
 - uv tool list: List installed tools.
 - uv tool update-shell: Update the shell to include tool executables.
 
-## Utility
+### Utility
 
 - uv cache clean: Remove cache entries.
 - uv cache prune: Remove outdated cache entries.
@@ -71,3 +73,16 @@ Running and installing tools published to Python package indexes, e.g., ruff or 
 - uv tool dir: Show the uv tool directory path.
 - uv python dir: Show the uv installed Python versions path.
 - uv self update: Update uv to the latest version.
+
+## build-system
+
+通过 `build-system` 和 `tool.hatch.build.targets.wheel`, 在虚拟环境中安装当前包
+
+```toml
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ghi"]
+```
