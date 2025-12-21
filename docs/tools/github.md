@@ -32,6 +32,15 @@ git submodule update --init --recursive
     IdentityFile ~/.ssh/example
     ```
 
+## credentials
+
+在首次拉取验证通过后将凭证保存在全局路径文件内, 在后续直接使用
+
+```bash
+# 使 https 凭证存储在 ~/.git-credentials
+git config --global credential.helper store 
+```
+
 ## gh
 
 ### Notifications
