@@ -23,6 +23,25 @@ else:
 
 </details>
 
+## 非捕获组
+
+<details>
+<summary>Example</summary>
+
+```python
+import re
+
+pattern = r"(\d+(?:.\d+)?)"
+result = re.match(pattern, "3.5")
+assert result and result.groups()[0] == "3.5"
+
+
+result = re.match(pattern, "3")
+assert result and result.groups()[0] == "3"
+```
+
+</details>
+
 ## 在正则表达式中忽略大小写
 
 - 使用 `re.I`
