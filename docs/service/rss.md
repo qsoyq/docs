@@ -25,7 +25,7 @@
 
 - 流量订阅
     - [ReDoc](https://p.19940731.xyz/redoc#tag/RSS/operation/traffic_used_by_day_jsonfeed_api_rss_nnr_traffic_used_day__ssid___get)
-  
+
 ### 1024.day
 
 <https://1024.day/>

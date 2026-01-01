@@ -5,22 +5,22 @@
 `./docker-compose.yaml`
 
 ```yaml
-services:  
+services:
     traefik:
         image: traefik:latest
         container_name: traefik
         restart: unless-stopped
         command: |-
-            --api.insecure=true 
+            --api.insecure=true
             --serversTransport.insecureSkipVerify=true
-        
+
             --entryPoints.web.address=:80
-            --entryPoints.websecure.address=:443      
+            --entryPoints.websecure.address=:443
             --entryPoints.websecure.http3
 
             --log.level=DEBUG
             --log.filePath=/var/logs/traefik/traefik.log
-            
+
 
             --accesslog=true
             --accesslog.fields.names.StartUTC=drop

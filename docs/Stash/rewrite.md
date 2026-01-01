@@ -59,7 +59,7 @@ curl -X GET https://p.19940731.xyz/api/basic/whoami  \
             "res6": "resv6",
             "res7": "resv7",
             "res9": "resv9",
-            "res10": "resv10"        
+            "res10": "resv10"
         }
     }'
 ```

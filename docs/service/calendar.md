@@ -21,7 +21,7 @@
 
 - Issues
     - [ReDoc](https://p.19940731.xyz/redoc#tag/Utils/operation/github_repo_issues_api_apple_ics_github_repos__owner___repo__issues_get)
-  
+
 ### vlr.gg
 
 <https://vlr.gg/>

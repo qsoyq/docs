@@ -27,7 +27,7 @@ img =
     post.video?.cover?.url_list.at(-1) || // HD
     post.video?.origin_cover?.url_list.at(-1); // LD
 
-const desc = post.desc?.replaceAll('\n', '<br>');    
+const desc = post.desc?.replaceAll('\n', '<br>');
 
 return {
     title: post.desc.split('\n')[0],

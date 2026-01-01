@@ -55,7 +55,7 @@ for match in PARAM_REGEX.finditer(path):
 
     param_convertors[param_name] = convertor
 
-    idx = match.end()    
+    idx = match.end()
 ```
 
 </details>
@@ -103,7 +103,7 @@ class IntegerConvertor(Convertor[int]):
     def to_string(self, value: int) -> str:
         value = int(value)
         assert value >= 0, "Negative integers are not supported"
-        return str(value)        
+        return str(value)
 ```
 
 </details>
@@ -450,7 +450,7 @@ assert "\f" not in inspect.cleandoc(doc)
 所以处理方式应该修改如下
 
 ```python
-self.description = description or inspect.cleandoc(self.endpoint.__doc__.split("\f")[0]).strip() if self.endpoint.__doc__ else "" 
+self.description = description or inspect.cleandoc(self.endpoint.__doc__.split("\f")[0]).strip() if self.endpoint.__doc__ else ""
 ```
 
 ## 回顾

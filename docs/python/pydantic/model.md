@@ -85,8 +85,8 @@ class DataModel(BaseModel):
     number: int
 
 
-class Response[DataT](BaseModel):  
-    data: DataT  
+class Response[DataT](BaseModel):
+    data: DataT
 
 
 print(Response[int](data=1))
@@ -246,7 +246,7 @@ from pydantic import BaseModel, PydanticUserError
 
 
 class Foo(BaseModel):
-    x: 'Bar'  
+    x: 'Bar'
 
 
 try:
@@ -393,7 +393,7 @@ class Model(BaseModel):
     model_config = ConfigDict(extra='allow')
 
 
-m = Model(x=1, y='a')  
+m = Model(x=1, y='a')
 assert m.model_dump() == {'x': 1, 'y': 'a'}
 assert m.__pydantic_extra__ == {'y': 'a'}
 ```

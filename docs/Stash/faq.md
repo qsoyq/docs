@@ -1,4 +1,16 @@
 
+## GEOSITE、GEOIP 和 no-resolve 的关系
+
+IP 类规则, 如`GEOIP`, 是针对出站请求为 IP 地址的部分进行内容匹配
+
+如 `https://223.5.5.5/dns-query`
+
+```yaml
+- GEOSITE,CN,DIRECT # 仅针对域名请求进行内容匹配
+- GEOIP,CN,DIRECT,no-resolve # 仅针对IP 请求进行内容匹配
+- GEOIP,CN,DIRECT # 仅针对IP 请求进行内容匹配, 如果请求是域名，会将域名解析为 IP 再进行内容匹配
+```
+
 ## 添加远程代理集后，策略组不显示代理集里的节点
 
 底部导航栏策略组＞左上角小云朵图标 ＞ proxies 列表 ＞ 左滑更新 ＞ 显示更新时间和数量表示成功

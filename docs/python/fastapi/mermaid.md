@@ -49,7 +49,7 @@ def add_mermaid_support(func: Callable[..., HTMLResponse]):
         pre.mermaid {
             background-color: lightsteelblue !important;
         }
-    </style>    
+    </style>
 
     '''
 

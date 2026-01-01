@@ -38,7 +38,7 @@ git submodule update --init --recursive
 
 ```bash
 # 使 https 凭证存储在 ~/.git-credentials
-git config --global credential.helper store 
+git config --global credential.helper store
 ```
 
 ## gh

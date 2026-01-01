@@ -45,7 +45,7 @@ class IntegerConvertor(Convertor[int]):
     def to_string(self, value: int) -> str:
         value = int(value)
         assert value >= 0, "Negative integers are not supported"
-        return str(value)        
+        return str(value)
 ```
 
 </details>

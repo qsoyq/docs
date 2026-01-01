@@ -14,7 +14,7 @@ curl https://api.perplexity.ai/v1/chat/completions \
     "model": "sonar-pro",
     "messages": [
       {
-        "role": "user", 
+        "role": "user",
         "content": "What are the major AI developments and announcements from today across the tech industry?"
       }
     ]

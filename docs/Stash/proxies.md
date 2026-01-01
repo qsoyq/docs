@@ -16,14 +16,14 @@ proxies:
       flow: xtls-rprx-vision
       udp: true
       tls: true
-      server: 
-      port: 
-      uuid: 
+      server:
+      port:
+      uuid:
       servername: www.amazon.com
       fingerprint: chrome # 可选
       reality-opts:
-          public-key: 
-          short-id: 
+          public-key:
+          short-id:
       benchmark-url: http://cp.cloudflare.com/
       benchmark-timeout: 1
 

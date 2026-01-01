@@ -79,7 +79,7 @@
 
 ## pap.er
 
-> 专为 Mac 设计的壁纸应用  
+> 专为 Mac 设计的壁纸应用
 每天享受来自全球新鲜精美的壁纸
 
 <https://paper.meiyuan.in/>
