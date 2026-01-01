@@ -6,9 +6,9 @@ IP 类规则, 如`GEOIP`, 是针对出站请求为 IP 地址的部分进行内�
 如 `https://223.5.5.5/dns-query`
 
 ```yaml
-- GEOSITE,CN,DIRECT # 仅针对域名请求进行内容匹配
-- GEOIP,CN,DIRECT,no-resolve # 仅针对IP 请求进行内容匹配
-- GEOIP,CN,DIRECT # 仅针对IP 请求进行内容匹配, 如果请求是域名，会将域名解析为 IP 再进行内容匹配
+- GEOSITE,cn,DIRECT # 仅针对域名请求进行内容匹配
+- GEOIP,cn,DIRECT,no-resolve # 仅针对IP 请求进行内容匹配
+- GEOIP,cn,DIRECT # 仅针对IP 请求进行内容匹配, 如果请求是域名，会将域名解析为 IP 再进行内容匹配
 ```
 
 ## 添加远程代理集后，策略组不显示代理集里的节点
