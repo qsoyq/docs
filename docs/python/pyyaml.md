@@ -2,15 +2,13 @@
 
 ## 序列化
 
-### width
+### 避免字符串自动换行
 
 序列化时会对过长字符串进行换行拆分
 
-如代码所示，在默认情况下，对于字符串长度高于某个值时，会对序列号的字符串跨行，对于某些会兼容跨行字符串的应用会有冲突，例如`Stash`内的脚本参数
+如代码所示，在默认情况下，对于字符串长度高于某个值时，会对序列号的字符串跨行，对于某些会兼容跨行字符串的应用会有冲突.
 
-通过指定 width 参数来避免字符串换行
-
-`yaml.safe_dump(payload, width=1000)`
+通过指定 `yaml.safe_dump(payload, width=1000)` 参数来避免字符串换行
 
 <details>
 
@@ -42,13 +40,41 @@ if __name__ == "__main__":
 
 </details>
 
-#### 回顾
+### 对字符串内的换行符特殊处理
 
-但是`width`应该设置为多少?
+序列化时使用折叠字符串语法
 
-有没有更优雅的方式？
+<details>
+<summary>Example</summary>
 
-### sort_keys
+```python
+import yaml
+
+data = {"text": "first line\nsecond line"}
+
+
+s = """
+"text": |-
+  first line
+  second line
+""".strip()
+result = yaml.safe_dump(data, default_style="|").strip()
+assert s == result, result
+
+s = """
+"text": >-
+  first line
+
+  second line
+""".strip()
+result = yaml.safe_dump(data, default_style=">").strip()
+
+assert s == result, result
+```
+
+</details>
+
+### 禁止按字典序排序
 
 默认情况下, 会对导出的对象安装字典序排序后再输出序列化后的内容
 
