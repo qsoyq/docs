@@ -13,7 +13,7 @@ markdown_extensions:
           custom_fences:
               - name: mermaid
                 class: mermaid
-                format: !!python/name:pymdownx.superfences.fence_code_format
+                # format: !!python/name:pymdownx.superfences.fence_code_format
 
 theme:
     name: material
@@ -166,6 +166,7 @@ nav:
                 - IKOS W3800苹果皮: note/daily/w3800.md
                 - Cloudflare Tunnel内网穿透方案: note/daily/cloudflare_tunnel.md
                 - 使用 mitmproxy 降级 http2: note/daily/disable-http2-by-mitmproxy.md
+                - 阿里云 OSS 管理: note/daily/aliyun-oss.md
                 - RSShub:
                       - 抖音:
                             - 用户: note/daily/rsshub/douyin/user.md
