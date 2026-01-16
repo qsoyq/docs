@@ -1,233 +1,234 @@
 site_name: docs
 
 site_description: >-
-    Create a branded static site from a set of Markdown files to host the
-    documentation of your Open Source or commercial project
+      Create a branded static site from a set of Markdown files to host the
+      documentation of your Open Source or commercial project
 
 repo_name: qsoyq/docs
 repo_url: https://github.com/qsoyq/docs
 edit_uri: edit/main/docs/
 
 markdown_extensions:
-    - pymdownx.superfences:
-          custom_fences:
-              - name: mermaid
-                class: mermaid
-                # format: !!python/name:pymdownx.superfences.fence_code_format
+      - pymdownx.superfences:
+              custom_fences:
+                    - name: mermaid
+                      class: mermaid
+                      # format: !!python/name:pymdownx.superfences.fence_code_format
 
 theme:
-    name: material
-    include_search_page: true
-    search_index_only: true
-    features:
-        - content.code.annotate
-        - content.tabs.link
+      name: material
+      include_search_page: true
+      search_index_only: true
+      features:
+            - content.code.annotate
+            - content.tabs.link
 
-        # - header.autohide
+            # - header.autohide
 
-        - navigation.instant
-        - navigation.tabs
-        - navigation.tabs.sticky
-        - navigation.prune
-        - navigation.indexes
-        - navigation.top
+            - navigation.instant
+            - navigation.tabs
+            - navigation.tabs.sticky
+            - navigation.prune
+            - navigation.indexes
+            - navigation.top
 
-        - toc.follow
+            - toc.follow
 
-        - search.highlight
-        - search.share
-        - search.suggest
+            - search.highlight
+            - search.share
+            - search.suggest
 
-    palette:
-        # Palette toggle for light mode
-        - scheme: default
-          toggle:
-              icon: material/brightness-7
-              name: Switch to dark mode
+      palette:
+            # Palette toggle for light mode
+            - scheme: default
+              toggle:
+                    icon: material/brightness-7
+                    name: Switch to dark mode
 
-        # Palette toggle for dark mode
-        - scheme: slate
-          toggle:
-              icon: material/brightness-4
-              name: Switch to light mode
+            # Palette toggle for dark mode
+            - scheme: slate
+              toggle:
+                    icon: material/brightness-4
+                    name: Switch to light mode
 extra:
-    social:
-        - icon: fontawesome/brands/github-alt
-          link: https://github.com/qsoyq
+      social:
+            - icon: fontawesome/brands/github-alt
+              link: https://github.com/qsoyq
 
 plugins:
-    - search
-    # - redirects:
-    #     redirect_maps:
-    #       changelog/insiders.md: insiders/changelog.md
-    #       reference/meta-tags.md: reference/index.md
-    #       reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
-    #       sponsorship.md: insiders/index.md
-    #       upgrading.md: upgrade.md
-    - minify:
-          minify_html: true
+      - search
+      # - redirects:
+      #     redirect_maps:
+      #       changelog/insiders.md: insiders/changelog.md
+      #       reference/meta-tags.md: reference/index.md
+      #       reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
+      #       sponsorship.md: insiders/index.md
+      #       upgrading.md: upgrade.md
+      - minify:
+              minify_html: true
 
 nav:
-    - Home: index.md
-    - Stash:
-          - 覆写: Stash/stoverride.md
-          - HTTP重写: Stash/rewrite.md
-          - 协议类型: Stash/proxies.md
-          - 常见问题: Stash/faq.md
-          #   - Stash/iperf3.md
-          - StashLink配置: Stash/stashlink.md
-          #   - Stash/snellv3.md
-          - Stash API: Stash/api.md
-          - 网络分流流程: Stash/network.md
-          - Stash 下使用中兴F50: Stash/f50.md
-          - Stash 中兴智慧生活 App: Stash/ztehome.md
-          - nameserver-policy: Stash/nameserver-policy.md
-          - 插件中心安装兼容 Stash: Stash/hub-rewrite-plugin.md
+      - Home: index.md
+      - Stash:
+              - 覆写: Stash/stoverride.md
+              - HTTP重写: Stash/rewrite.md
+              - 协议类型: Stash/proxies.md
+              - 常见问题: Stash/faq.md
+              #   - Stash/iperf3.md
+              - StashLink配置: Stash/stashlink.md
+              #   - Stash/snellv3.md
+              - Stash API: Stash/api.md
+              - 网络分流流程: Stash/network.md
+              - Stash 下使用中兴F50: Stash/f50.md
+              - Stash 中兴智慧生活 App: Stash/ztehome.md
+              - nameserver-policy: Stash/nameserver-policy.md
+              - 插件中心安装兼容 Stash: Stash/hub-rewrite-plugin.md
 
-    - Python:
-          - Python: python/python.md
-          - 版本更新:
-                - What’s New In Python 3.10: python/versions/310.md
-                - What’s New In Python 3.11: python/versions/311.md
-                - What’s New In Python 3.12: python/versions/312.md
-                - What’s New In Python 3.13: python/versions/313.md
-                - What’s New In Python 3.14: python/versions/314.md
-          - 标准库:
-                - re: python/regex.md
-                - mmap: python/mmap.md
-                - contextlib: python/contextlib.md
-                - logging: python/logging.md
-                - dataclasses: python/dataclasses.md
-                - threading: python/threading.md
-                - profile: python/profile.md
-                - functools: python/functools.md
-                - itertools: python/itertools.md
+      - Python:
+              - Python: python/python.md
+              - 版本更新:
+                      - What’s New In Python 3.10: python/versions/310.md
+                      - What’s New In Python 3.11: python/versions/311.md
+                      - What’s New In Python 3.12: python/versions/312.md
+                      - What’s New In Python 3.13: python/versions/313.md
+                      - What’s New In Python 3.14: python/versions/314.md
+              - 标准库:
+                      - re: python/regex.md
+                      - mmap: python/mmap.md
+                      - contextlib: python/contextlib.md
+                      - logging: python/logging.md
+                      - dataclasses: python/dataclasses.md
+                      - threading: python/threading.md
+                      - profile: python/profile.md
+                      - functools: python/functools.md
+                      - itertools: python/itertools.md
 
-          - 三方库:
-                - httpx: python/httpx.md
-                - sqlalchemy: python/sqlalchemy.md
-                - gRPC: python/grpc.md
-                - typer: python/typer.md
-                - sentry: python/sentry.md
-                - PyYAML: python/pyyaml.md
-                - pywright: python/playwright.md
-                - pretty_errors: python/pretty_errors.md
-                - proto-plus: python/proto-plus.md
-                - openai: python/openai.md
-                - pydantic:
-                      - model: python/pydantic/model.md
-                      - migration: python/pydantic/migration.md
-                      - serialization: python/pydantic/serialization.md
-                      - validator: python/pydantic/validator.md
-                - FastAPI:
-                      - 关于FastAPI: python/fastapi/fastapi.md
-                      - 使用手册: python/fastapi/usage.md
-                      - 路由函数: python/fastapi/route.md
-                      - 调用链: python/fastapi/callchain.md
-                      - Headers是如何处理的: python/fastapi/headers.md
-                      - 中间件使用示例: python/fastapi/middlewares.md
-                      - 在FastAPI中支持mermaid图表: python/fastapi/mermaid.md
-                      - 关于FastAPI的响应类: python/fastapi/response.md
-          - 编码:
-                - pep: python/pep.md
+              - 三方库:
+                      - httpx: python/httpx.md
+                      - sqlalchemy: python/sqlalchemy.md
+                      - gRPC: python/grpc.md
+                      - typer: python/typer.md
+                      - sentry: python/sentry.md
+                      - PyYAML: python/pyyaml.md
+                      - pywright: python/playwright.md
+                      - pretty_errors: python/pretty_errors.md
+                      - proto-plus: python/proto-plus.md
+                      - openai: python/openai.md
+                      - pydantic:
+                              - model: python/pydantic/model.md
+                              - migration: python/pydantic/migration.md
+                              - serialization: python/pydantic/serialization.md
+                              - validator: python/pydantic/validator.md
+                      - FastAPI:
+                              - 关于FastAPI: python/fastapi/fastapi.md
+                              - 使用手册: python/fastapi/usage.md
+                              - 路由函数: python/fastapi/route.md
+                              - 调用链: python/fastapi/callchain.md
+                              - Headers是如何处理的: python/fastapi/headers.md
+                              - 中间件使用示例: python/fastapi/middlewares.md
+                              - 在FastAPI中支持mermaid图表: python/fastapi/mermaid.md
+                              - 关于FastAPI的响应类: python/fastapi/response.md
+              - 编码:
+                      - pep: python/pep.md
 
-                - wtfpython: python/wtfpython.md
-          - 开发工具:
-                - uv: python/uv.md
-                - poetry: python/poetry.md
+                      - wtfpython: python/wtfpython.md
+              - 开发工具:
+                      - uv: python/uv.md
+                      - poetry: python/poetry.md
 
-    - Go:
-          - 三方库:
-                - v2fly/geosite: golang/v2fly/domain-list-community.md
+      - Go:
+              - 三方库:
+                      - v2fly/geosite: golang/v2fly/domain-list-community.md
 
-    - Service:
-          - RSS: service/rss.md
-          - iCalendar: service/calendar.md
-          - DNS: service/dns.md
-          - Yacd: service/yacd.md
+      - Service:
+              - RSS: service/rss.md
+              - iCalendar: service/calendar.md
+              - DNS: service/dns.md
+              - Yacd: service/yacd.md
 
-    - Notes:
-          - Note: note/note.md
+      - Notes:
+              - Note: note/note.md
 
-          - 日常:
-                - 摸鱼网站: note/daily/mofish.md
-                - 一些没想明白的事: note/daily/why.md
-                - HTTP 客户端实现思路: note/daily/http-client.md
-                - HTTP RPC Client 封装思考: note/daily/http-rpc-client.md
-                - iOS Safari 如何唤醒App: note/daily/safariOpenApp.md
-                - 中国移动小技巧: note/daily/cmcc.md
-                - PerplexityPro: note/daily/perplexity.md
-                - 关于缓存的那些事: note/daily/cache.md
-                - NGA 移除外链警告: note/daily/remove_nga_url_alert.md
-                - 时序数据库的特点: note/daily/tsdb.md
-                - 谷歌云试用: note/daily/gcp.md
-                - 国行 Mac 显示台湾 emoji 🇹🇼: note/daily/display_taiwan_emoji_on_cn_mac.md
-                - Nodeseek网站分析: note/daily/nodeseek.md
-                - IKOS W3800苹果皮: note/daily/w3800.md
-                - Cloudflare Tunnel内网穿透方案: note/daily/cloudflare_tunnel.md
-                - 使用 mitmproxy 降级 http2: note/daily/disable-http2-by-mitmproxy.md
-                - 阿里云 OSS 管理: note/daily/aliyun-oss.md
-                - RSShub:
-                      - 抖音:
-                            - 用户: note/daily/rsshub/douyin/user.md
-                - VSCode:
-                      - VSCode 使用手册: note/daily/vscode/basic.md
-                      - MarkdwonTable插件使用: note/daily/vscode/markdown-table.md
-                      - 为什么从 Sublime 迁移到 VSCode: note/daily/vscode/sublime.md
-          - Apple 快捷指令:
-                - 创建 Github Issue: note/shortcuts/create_github_issue.md
-                - iOS 自动化转发短信到Telegram: note/shortcuts/sms_forward_to_tg.md
-          - 服务部署:
-                - reality: Stash/reality.md
-                - trojan-go: Stash/trojan.md
-                - hysteria2: Stash/hysteria2.md
+              - 日常:
+                      - 摸鱼网站: note/daily/mofish.md
+                      - 一些没想明白的事: note/daily/why.md
+                      - HTTP 客户端实现思路: note/daily/http-client.md
+                      - HTTP RPC Client 封装思考: note/daily/http-rpc-client.md
+                      - iOS Safari 如何唤醒App: note/daily/safariOpenApp.md
+                      - 中国移动小技巧: note/daily/cmcc.md
+                      - PerplexityPro: note/daily/perplexity.md
+                      - 关于缓存的那些事: note/daily/cache.md
+                      - NGA 移除外链警告: note/daily/remove_nga_url_alert.md
+                      - 时序数据库的特点: note/daily/tsdb.md
+                      - 谷歌云试用: note/daily/gcp.md
+                      - 国行 Mac 显示台湾 emoji 🇹🇼: note/daily/display_taiwan_emoji_on_cn_mac.md
+                      - Nodeseek网站分析: note/daily/nodeseek.md
+                      - IKOS W3800苹果皮: note/daily/w3800.md
+                      - Cloudflare Tunnel内网穿透方案: note/daily/cloudflare_tunnel.md
+                      - 使用 mitmproxy 降级 http2: note/daily/disable-http2-by-mitmproxy.md
+                      - 阿里云 OSS 管理: note/daily/aliyun-oss.md
+                      - RSShub:
+                              - 抖音:
+                                      - 用户: note/daily/rsshub/douyin/user.md
+                      - VSCode:
+                              - VSCode 使用手册: note/daily/vscode/basic.md
+                              - MarkdwonTable插件使用: note/daily/vscode/markdown-table.md
+                              - 为什么从 Sublime 迁移到 VSCode: note/daily/vscode/sublime.md
+              - Apple 快捷指令:
+                      - 创建 Github Issue: note/shortcuts/create_github_issue.md
+                      - iOS 自动化转发短信到Telegram: note/shortcuts/sms_forward_to_tg.md
+              - 服务部署:
+                      - reality: Stash/reality.md
+                      - trojan-go: Stash/trojan.md
+                      - hysteria2: Stash/hysteria2.md
 
-          - MySQL:
-                - 关于 MySQL: note/mysql/mysql.md
-                - 事务隔离机制: note/mysql/lock.md
-                - CRUD: note/mysql/crud.md
-                - 外键约束: note/mysql/mysql_foreign_key_constraints.md
-          - Docker:
-                - Docker: note/docker/docker.md
-                - Docker Swam 使用体验: note/docker/docker-swarm.md
-                - Docker Compose: note/docker/compose.md
-          - Traefik:
-                - note/traefik/deploy.md
-                - plugin: note/traefik/plugin.md
-                - middleware:
-                      - note/traefik/traefik-forwardauth-oauth-middleware.md
+              - MySQL:
+                      - 关于 MySQL: note/mysql/mysql.md
+                      - 事务隔离机制: note/mysql/lock.md
+                      - CRUD: note/mysql/crud.md
+                      - 外键约束: note/mysql/mysql_foreign_key_constraints.md
+              - Docker:
+                      - Docker: note/docker/docker.md
+                      - Docker Swam 使用体验: note/docker/docker-swarm.md
+                      - Docker Compose: note/docker/compose.md
+              - Traefik:
+                      - note/traefik/deploy.md
+                      - plugin: note/traefik/plugin.md
+                      - middleware:
+                              - note/traefik/traefik-forwardauth-oauth-middleware.md
 
-                - 源码解读:
-                      - note/traefik/source/index.md
-                      - note/traefik/source/server.md
-                      - entrypoint: note/traefik/source/entrypoint.md
-                      - watcher:
-                            - watcher: note/traefik/source/watcher.md
-                            - provider: note/traefik/source/provider.md
-                            - listener: note/traefik/source/watcher_listener.md
+                      - 源码解读:
+                              - note/traefik/source/index.md
+                              - note/traefik/source/server.md
+                              - entrypoint: note/traefik/source/entrypoint.md
+                              - watcher:
+                                      - watcher: note/traefik/source/watcher.md
+                                      - provider: note/traefik/source/provider.md
+                                      - listener: note/traefik/source/watcher_listener.md
 
-          - 消息队列:
-                - redis-stream: note/mq/redis-stream.md
-          - Tools:
-                - Zimaboard 软路由体验: tools/zimaboard.md
-                - ci: tools/ci.md
-                - mermaid: tools/mermaid.md
-                - pre-commit: tools/pre-commit.md
-                - traefik: tools/traefik.md
-                - dev-tool: tools/dev-tool.md
-                - frp: tools/frp.md
-                - cloudflared: tools/cloudflared.md
-                - trojan: tools/trojan.md
-                - macos: tools/macos.md
-                - linux: tools/linux.md
-                - git使用手册: tools/git.md
+              - 消息队列:
+                      - redis-stream: note/mq/redis-stream.md
+              - Tools:
+                      - Zimaboard 软路由体验: tools/zimaboard.md
+                      - ci: tools/ci.md
+                      - mermaid: tools/mermaid.md
+                      - pre-commit: tools/pre-commit.md
+                      - traefik: tools/traefik.md
+                      - dev-tool: tools/dev-tool.md
+                      - frp: tools/frp.md
+                      - cloudflared: tools/cloudflared.md
+                      - trojan: tools/trojan.md
+                      - macos: tools/macos.md
+                      - linux: tools/linux.md
+                      - git使用手册: tools/git.md
+                      - Jenkins 手册: tools/jenkins.md
 
-          - Protocol:
-                - ASGI: protocol/asgi.md
-                - gRPC: protocol/grpc.md
-                - OAuth: protocol/oauth.md
-                - Network:
-                      - Network: protocol/network/network.md
-                      - TCP: protocol/network/tcp.md
-                      - TLS: protocol/network/tls.md
-                      - HTTP: protocol/network/http.md
+              - Protocol:
+                      - ASGI: protocol/asgi.md
+                      - gRPC: protocol/grpc.md
+                      - OAuth: protocol/oauth.md
+                      - Network:
+                              - Network: protocol/network/network.md
+                              - TCP: protocol/network/tcp.md
+                              - TLS: protocol/network/tls.md
+                              - HTTP: protocol/network/http.md
