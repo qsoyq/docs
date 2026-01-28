@@ -119,6 +119,7 @@ nav:
                                       - migration: python/pydantic/migration.md
                                       - serialization: python/pydantic/serialization.md
                                       - validator: python/pydantic/validator.md
+                                      - settings: python/pydantic/settings.md
                             - FastAPI:
                                       - 关于FastAPI: python/fastapi/fastapi.md
                                       - 使用手册: python/fastapi/usage.md
