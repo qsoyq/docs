@@ -1,6 +1,8 @@
 # jenkins
 
-## Linux Python 环境模板
+## 配置模板
+
+### Linux Python 环境模板
 
 通过`pyenv`在节点上安装指定版本的 Python 解释器
 
@@ -77,4 +79,11 @@ pipeline {
     }
 }
 
+```
+
+## HTTP API 触发构建
+
+```bash
+curl -X POST "http://{host}:{port}/job/{job-name}/build" \
+  --user USERNAME:API_TOKEN
 ```
