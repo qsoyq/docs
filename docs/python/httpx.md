@@ -237,8 +237,8 @@ python -m httpx_disable_verify install
 <summary>查看代码示例</summary>
 
 ```python
-import time
 import logging
+import time
 from collections.abc import Callable
 from functools import wraps
 from typing import Any
@@ -274,25 +274,27 @@ def retry_http(
         @wraps(func)
         def wrapper(*args: Any, **kwargs: Any) -> httpx.Response:
             for attempt in range(1, max_attempts + 1):
+                wait_seconds = retry_backoff_seconds * attempt
                 try:
                     resp = func(*args, **kwargs)
-
                     if retry_on_status(resp.status_code):
                         if attempt < max_attempts:
                             logger.warning(f"{log_prefix} HTTP {resp.status_code}，准备重试 {attempt}/{max_attempts}")
                             if retry_backoff_seconds:
-                                time.sleep(retry_backoff_seconds * attempt)
+                                time.sleep(wait_seconds)
                             continue
                         else:
-                            logger.error(f"{log_prefix} 请求失败 {resp.status_code} {resp.text}")
+                            logger.warning(f"{log_prefix} 请求失败 {resp.status_code} {resp.text}")
+                            return resp
                     return resp
                 except httpx.HTTPError as exc:
                     if attempt < max_attempts:
                         logger.warning(f"{log_prefix} 请求异常，准备重试 {attempt}/{max_attempts}: {exc}")
                         if retry_backoff_seconds:
-                            time.sleep(retry_backoff_seconds * attempt)
+                            time.sleep(wait_seconds)
                         continue
-                    raise
+                    raise exc
+            raise RuntimeError(f"{log_prefix} 未预期执行到重试逻辑末尾")
 
         return wrapper
 
