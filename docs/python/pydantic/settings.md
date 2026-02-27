@@ -64,7 +64,6 @@ class AppConfig(BaseSettings):
         for field_name in cls.model_fields.keys():
             setattr(app_config, field_name, getattr(new_config, field_name))
 
-
 APP_CONFIG: AppConfig = AppConfig.model_validate({})
 
 ```

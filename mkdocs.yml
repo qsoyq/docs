@@ -224,6 +224,7 @@ nav:
                             - linux: tools/linux.md
                             - git使用手册: tools/git.md
                             - Jenkins 手册: tools/jenkins.md
+                            - Cursor Cli: tools/cursor-cli.md
 
                   - Protocol:
                             - ASGI: protocol/asgi.md

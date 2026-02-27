@@ -1,4 +1,3 @@
-
 ## GEOSITE、GEOIP 和 no-resolve 的关系
 
 IP 类规则, 如`GEOIP`, 是针对出站请求为 IP 地址的部分进行内容匹配
