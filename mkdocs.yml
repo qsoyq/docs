@@ -169,6 +169,7 @@ nav:
                             - 使用 mitmproxy 降级 http2: note/daily/disable-http2-by-mitmproxy.md
                             - 阿里云 OSS 管理: note/daily/aliyun-oss.md
                             - 飞书单聊应用机器人: note/daily/feishu-pm-chat-bot.md
+                            - Telegram Deeplink: note/daily/telegram-deeplink.md
                             - RSShub:
                                       - 抖音:
                                                 - 用户: note/daily/rsshub/douyin/user.md
