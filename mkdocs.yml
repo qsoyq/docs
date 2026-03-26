@@ -196,8 +196,9 @@ nav:
                             - Docker Compose: note/docker/compose.md
                   - Traefik:
                             - note/traefik/deploy.md
-                            - plugin: note/traefik/plugin.md
-                            - middleware:
+                            - Docker: note/traefik/docker-provider.md
+                            - Plugin: note/traefik/plugin.md
+                            - Middleware:
                                       - note/traefik/traefik-forwardauth-oauth-middleware.md
 
                             - 源码解读:
