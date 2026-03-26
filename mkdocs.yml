@@ -213,6 +213,7 @@ nav:
                   - 消息队列:
                             - redis-stream: note/mq/redis-stream.md
                   - Tools:
+                            - Tailscale: tools/tailscale.md
                             - Zimaboard 软路由体验: tools/zimaboard.md
                             - ci: tools/ci.md
                             - mermaid: tools/mermaid.md
